@@ -1,0 +1,134 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.firstSection {
+  gap: 20px;
+}
+
+.hero {
+  position: relative;
+  width: 1320px;
+  height: 569px;
+  padding-top: 8px;
+  background-color: #FBFAFB;
+  border-radius: 36px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 67px;
+  margin: 0 16px 54px;
+  padding: 0 56px;
+
+  background: #FFFFFF80;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 25px;
+}
+
+.navigation {
+  display: flex;
+  gap: 40px;
+}
+
+.descriptionBlock {
+  margin-left: 72px;
+  margin-bottom: 50px;
+}
+
+.title {
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 52px;
+  letter-spacing: -0.03em;
+}
+
+.description {
+  margin-bottom: 24px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #646464;
+
+  .strong {
+    font-weight: 700;
+  }
+}
+
+.button  {
+  width: 300px;
+  height: 60px;
+}
+
+.options {
+  position: relative;
+  width: 684px;
+  display: flex;
+  gap: 48px;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.option:nth-child(2) {
+  margin-left: 70px;
+}
+
+.optionsLine {
+  position: absolute;
+  top: 22px;
+  left: 0;
+  width: 100%;
+  height: 0;
+  border: 2px solid #DBDAFE;
+}
+
+.optionIconWrapper {
+  width: fit-content;
+  border-radius: 30px;
+  border: 1px solid #DBDAFE;
+}
+
+.optionIcon {
+  position: relative;
+  padding: 8px;
+  width: fit-content;
+  border-radius: 30px;
+  border: 2px solid #FBFAFB;
+  background: linear-gradient(131.58deg, #DEDDFF 12.71%, #B3B1F4 86.1%);
+}
+
+.optionDescription {
+  min-width: 178px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #646464;
+  white-space: nowrap;
+}
+
+.heroBg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 620px;
+  height: 396px;
+  background: url('./assets/hero-bg.png');
+  background-size: cover;
+}
