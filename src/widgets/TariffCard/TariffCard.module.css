@@ -1,0 +1,161 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 315px;
+  background: #746EF9;
+  border-radius: 30px;
+}
+
+.cardWrapper {
+  background: #FBFAFB;
+  border-radius: 30px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.popularText {
+  display: flex;
+  gap: 4px;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 14px;
+  color: #FBFAFB;
+  margin-top: 9px;
+  margin-bottom: 7px;
+
+  path {
+    fill: #FFD904;
+    stroke: #FFD904;
+  }
+}
+
+.cardWrapper.popular {
+  border: 4px solid #746EF9;
+
+  .card {
+    transform: translateY(5px);
+  }
+
+  .cardTop {
+    margin: 15px 13px 17px;
+
+    .name {
+      margin-top: -5px;
+    }
+  }
+}
+
+.cardWrapper.disabled .card {
+  opacity: 0.4;
+}
+
+.cardTop {
+  margin: 20px 18px 17px;
+}
+
+.name {
+  margin-bottom: 12px;
+  margin-top: 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 18px;
+  color: #646464;
+}
+
+.paramsList {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-left: 18px;
+  margin-bottom: 20px;
+}
+
+.param {
+  display: flex;
+  align-items: start;
+  gap: 12px;
+}
+
+.icon {
+  margin-top: 10px;
+}
+
+.paramText {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.paramName {
+  height: 9px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #646464;
+}
+
+.paramValue {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.cardFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+  padding: 0 18px 0;
+  border-top: 1px solid #DEDDFF;
+}
+
+.oldPrice {
+  position: relative;
+  font-weight: 500;
+  color: #746EF9;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: 45%;
+    width: 100%;
+    height: 0px;
+    border: 1px solid #746EF9;
+    background: #746EF9; 
+  }
+}
+
+.priceWrapper {
+  display: flex;
+  gap: 6px;
+  margin-top: 12px;
+  font-weight: 700;
+  font-size: 28px;
+  color: #0F0C16;
+}
+
+.month {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #646464;
+}
+
+.button {
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+}

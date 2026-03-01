@@ -12,5 +12,6 @@ export default defineConfig({
   plugins: [react(), svgr()],
   server: {
     port: 3000,
+    allowedHosts: true,
   }
 });

@@ -3,9 +3,32 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 20px;
+  transition:
+    background-color 0.16s ease-out,
+    color 0.16s ease-out,
+    transform 0.12s ease-out,
+    box-shadow 0.12s ease-out,
+    outline 0.12s ease-out;
+}
+
+.button:disabled {
+  background: #646464;
+}
+
+.button:hover {
+  transform: translateY(-1px);
 }
 
 .primary {
   background: #746EF9;
   color: #FBFAFB;
+
+  &:hover {
+    background: #857efc;
+  }
+}
+
+.secondary {
+  background: #DBDAFE;
+  border: 2px solid #746EF9;
 }

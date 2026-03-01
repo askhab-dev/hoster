@@ -5,9 +5,17 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'secondary';
 }
 
-export const Button = ({ children, variant = 'primary', className, ...props }: ButtonProps) => {
+export const Button = ({ children, variant, className, ...props }: ButtonProps) => {
+  let variantClass = '';
+
+  if (variant === 'primary') {
+    variantClass = styles.primary;
+  } else if (variant === 'secondary') {
+    variantClass = styles.secondary;
+  }
+
   return (
-    <button className={cx(styles.button, variant === 'primary' && styles.primary, className)} {...props}>
+    <button className={cx(styles.button, variantClass, className)} {...props}>
       {children}
     </button>
   );
