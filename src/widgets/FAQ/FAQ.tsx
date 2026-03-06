@@ -1,42 +1,11 @@
 import { useState } from 'react'
 import ChevronDown from '@/shared/assets/chevron-down.svg?react'
 import styles from './FAQ.module.css'
+import type { FAQProps } from './FAQ.types';
 
-interface FAQItem {
-  id: number
-  question: string
-  answer: string
-}
+export const FAQ: React.FC<FAQProps> = (props) => {
+  const { title, list } = props;
 
-const faqData: FAQItem[] = [
-  {
-    id: 1,
-    question: 'Как подключиться к VPS-серверу?',
-    answer: 'После оплаты вы получите доступ к панели управления, где сможете установить ОС и управлять сервером. Все инструкции доступны в документации.'
-  },
-  {
-    id: 2,
-    question: 'Как мне начать работу с VPS-хостингом?',
-    answer: 'После оплаты вы получите доступ к панели управления, где сможете установить ОС и управлять сервером. Все инструкции доступны в документации.'
-  },
-  {
-    id: 3,
-    question: 'Для чего можно использовать VPS?',
-    answer: 'После оплаты вы получите доступ к панели управления, где сможете установить ОС и управлять сервером. Все инструкции доступны в документации.'
-  },
-  {
-    id: 4,
-    question: 'В чём преимущества VPS?',
-    answer: 'После оплаты вы получите доступ к панели управления, где сможете установить ОС и управлять сервером. Все инструкции доступны в документации.'
-  },
-  {
-    id: 5,
-    question: 'Что такое VPS?',
-    answer: 'После оплаты вы получите доступ к панели управления, где сможете установить ОС и управлять сервером. Все инструкции доступны в документации.'
-  }
-]
-
-export const FAQ = () => {
   const [openId, setOpenId] = useState<number | null>(null)
 
   const toggleItem = (id: number) => {
@@ -45,9 +14,9 @@ export const FAQ = () => {
 
   return (
     <section className={styles.faq}>
-      <h2 className={styles.title}>Часто задаваемые вопросы</h2>
+      <h2 className={styles.title}>{title}</h2>
       <div className={styles.list}>
-        {faqData.map((item) => (
+        {list.map((item) => (
           <div key={item.id} className={styles.item}>
             <button
               className={styles.question}

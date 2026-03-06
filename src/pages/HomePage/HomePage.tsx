@@ -9,17 +9,14 @@ import CheckIcon from './assets/check-broken.svg?react';
 import StarIcon from '@/shared/assets/star.svg?react';
 import Line from './assets/line.svg?react';
 import TelegramIcon from './assets/telegram.svg?react';
-import ChatIcon from './assets/chat.svg?react';
-import TgIcon from './assets/tg.svg?react';
-import VkIcon from './assets/vk.svg?react';
-import WhatsappIcon from './assets/whatsapp.svg?react';
-import TopIcon from './assets/top.svg?react';
 
 import styles from './HomePage.module.css';
 import { MultiSwitcher } from '@/shared/ui/MultiSwitcher/MultiSwitcher';
 import { TariffCard, TARIFFS } from '@/widgets/TariffCard';
 import { FAQ } from '@/widgets/FAQ/FAQ';
-import cx from 'clsx';
+import { FAQ_LIST } from './config/faq';
+import { Footer } from '@/widgets/Footer';
+import { Logo } from '@/shared/ui/Logo';
 
 export function HomePage() {
   return (
@@ -27,7 +24,7 @@ export function HomePage() {
       <section className={styles.heroSection}>
         <div className={styles.hero}>
           <header className={styles.header}>
-            <span className={styles.logo}>ХОСТЕР</span>
+            <Logo />
             <nav className={styles.navigation}>
               <a href="#">Продукты</a>
               <a href="#">Партнерство</a>
@@ -212,7 +209,7 @@ export function HomePage() {
           </div>
       </section>
 
-      <FAQ />
+      <FAQ title='Часто задаваемые вопросы' list={FAQ_LIST} />
 
       <section className={styles.formSection}>
         <form action="" className={styles.form}>
@@ -244,101 +241,7 @@ export function HomePage() {
         </form>
       </section>
 
-      <footer>
-        <div className={styles.footerFirstLine}>
-          <div className={styles.footerDescription}>
-            <span className={cx(styles.logo, styles.footerLogo)}>ХОСТЕР</span>
-            <p>
-              Сервера для личного пользования<br />
-              или коммерческих проектов.
-            </p>
-          </div>
-
-          <Button variant='secondary' className={styles.footerSupportButton}>
-            <ChatIcon className={styles.footerChatIcon}/>
-            Поддержка / помощь клиентам
-          </Button>
-
-          <div className={styles.footerFirstLineLists}>
-            <div className={styles.footerList}>
-            <p className={styles.footerListLabel}>
-              Мессенджеры:
-            </p>
-            <a className={styles.footerListItem}>Telegram Bot</a>
-          </div>
-
-          <div className={styles.footerList}>
-            <p className={styles.footerListLabel}>
-              Контакты:
-            </p>
-            <a className={styles.footerListItem} href="tel:+790443243334">
-              +7 904-432-43-34
-            </a>
-            <a className={styles.footerListItem} href="mailto:hoster@mail.ru">
-              hoster@mail.ru
-            </a>
-          </div>
-
-          <div className={styles.footerList}>
-            <p className={styles.footerListLabel}>
-              Соц-сети:
-            </p>
-            <div className={styles.footerSocials}>
-              <a href="vk.com" target='_blank'>
-                <VkIcon />
-              </a>
-              <a href="t.me" target='_blank'>
-                <TgIcon />
-              </a>
-              <a href="whatsapp.com" target='_blank'>
-                <WhatsappIcon />
-              </a>
-            </div>
-          </div>
-          </div>
-        </div>
-
-        <div className={styles.footerSecondLine}>
-          <p className={styles.footerCopyright}>
-            ИП Калашенко Владислав Сергеевич ИНН<br />
-            245804543635, ОГРНИП 33424343095530<br />
-            © 2026
-          </p>
-
-          <div className={styles.footerSecondLineLists}>
-            <div className={cx(styles.footerList, styles.footerServicesList)}>
-              <p className={styles.footerListLabel}>
-                Услуги:
-              </p>
-              <a className={styles.footerListItem} href="#">VPS серверы</a>
-              <a className={styles.footerListItem} href="#">VPS серверы</a>
-              <a className={styles.footerListItem} href="#">VPS серверы</a>
-            </div>
-
-            <div className={styles.footerList}>
-              <p className={styles.footerListLabel}>
-                Информация:
-              </p>
-              <a className={styles.footerListItem} href="#">Защита от атак</a>
-              <a className={styles.footerListItem} href="#">Контакты</a>
-              <a className={styles.footerListItem} href="#">Реферальная программа</a>
-              <a className={styles.footerListItem} href="#">Личный кабинет</a>
-            </div>
-          </div>
-
-          <div className={styles.footerEndBlock}>
-            <Button className={styles.backToTopBtn}>
-              <TopIcon />
-              Вернуться в начало сайта
-            </Button>
-
-            <div className={styles.footerLinks}>
-              <a href="#">Политика конфиденциальности</a>
-              <a href="#">Договор оферты</a>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 };
