@@ -1,0 +1,1 @@
+export { PrimeBanner } from './PrimeBanner';

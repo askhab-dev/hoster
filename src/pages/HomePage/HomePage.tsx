@@ -1,4 +1,17 @@
+
+
+import { MultiSwitcher } from '@/shared/ui/MultiSwitcher/MultiSwitcher';
+import { TariffCard, TARIFFS } from '@/widgets/TariffCard';
+import { FAQ } from '@/widgets/FAQ/FAQ';
+import { Footer } from '@/widgets/Footer';
+import { SupportForm } from '@/widgets/SupportForm/SupportForm';
+
 import { Button } from '@/shared/ui/Button/Button';
+import { Logo } from '@/shared/ui/Logo';
+import StarIcon from '@/shared/assets/star.svg?react';
+
+import { FAQ_LIST } from './config/faq';
+import { PrimeBanner } from './ui/PrimeBanner';
 
 import GlobeIcon from './assets/globe.svg?react';
 import MessageIcon from './assets/message.svg?react';
@@ -6,17 +19,8 @@ import ShieldIcon from './assets/shield.svg?react';
 import LightningIcon from './assets/lightning.svg?react';
 import SpeedIcon from './assets/speed.svg?react';
 import CheckIcon from './assets/check-broken.svg?react';
-import StarIcon from '@/shared/assets/star.svg?react';
-import Line from './assets/line.svg?react';
 
 import styles from './HomePage.module.css';
-import { MultiSwitcher } from '@/shared/ui/MultiSwitcher/MultiSwitcher';
-import { TariffCard, TARIFFS } from '@/widgets/TariffCard';
-import { FAQ } from '@/widgets/FAQ/FAQ';
-import { FAQ_LIST } from './config/faq';
-import { Footer } from '@/widgets/Footer';
-import { Logo } from '@/shared/ui/Logo';
-import { SupportForm } from '@/widgets/SupportForm/SupportForm';
 
 export function HomePage() {
   return (
@@ -186,27 +190,7 @@ export function HomePage() {
       </section>
 
       <section className={styles.primeBannerSection}>
-          <div className={styles.primeBannerWrapper}>
-            <div className={styles.primeBanner}>
-              <div className={styles.primeBannerLeft}>
-                <h2 className={styles.primeBannerTitle}>Начните работу над своим проектом уже сегодня</h2>
-
-                <p className={styles.primeBannerDescription}>
-                  Благодаря нашим простым в установке решениям<br />
-                  и превосходной поддержке клиентов ваш VPS<br />
-                  будет запущен и готов к работе всего за 10 минут.<br />
-                </p>
-
-                <Button className={styles.primeBannerButton} variant='secondary'>
-                  Выберите свой план
-                </Button>
-              </div>
-
-              <Line className={styles.primeBannerLine} />
-            </div>
-
-            <img src='/lights.png' alt="Lights" className={styles.primeBannerImage} />
-          </div>
+        <PrimeBanner />
       </section>
 
       <section className={styles.faq}>
