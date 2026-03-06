@@ -5,6 +5,7 @@ import { TariffCard, TARIFFS } from '@/widgets/TariffCard';
 import { FAQ } from '@/widgets/FAQ/FAQ';
 import { Footer } from '@/widgets/Footer';
 import { SupportForm } from '@/widgets/SupportForm/SupportForm';
+import { Banner } from '@/widgets/Banner';
 
 import { Button } from '@/shared/ui/Button/Button';
 import { Logo } from '@/shared/ui/Logo';
@@ -18,7 +19,6 @@ import MessageIcon from './assets/message.svg?react';
 import ShieldIcon from './assets/shield.svg?react';
 import LightningIcon from './assets/lightning.svg?react';
 import SpeedIcon from './assets/speed.svg?react';
-import CheckIcon from './assets/check-broken.svg?react';
 
 import styles from './HomePage.module.css';
 
@@ -128,65 +128,63 @@ export function HomePage() {
       </section>
 
       <section className={styles.bannersSection}>
-          <div className={styles.banner}>
-            <h3 className={styles.bannerTitle}>Надёжная облачная инфраструктура</h3>
-            <p className={styles.bannerDescription}>
-              Каждый VPS-сервер работает на современном оборудовании<br />AMD EPYC и NVMe-накопителях в дата-центрах Tier III.<br />
-              Мы используем выделенную сеть <strong>100 Гбит/с и гарантируем<br />доступность 99,95 % времени</strong>. Никаких просадок скорости,<br />
+        <Banner
+          title="Надёжная облачная инфраструктура"
+          description={
+            <>
+              Каждый VPS-сервер работает на современном оборудовании<br />
+              AMD EPYC и NVMe-накопителях в дата-центрах Tier III.<br />
+              Мы используем выделенную сеть <strong>100 Гбит/с и гарантируем<br />
+              доступность 99,95 % времени</strong>. Никаких просадок скорости,<br />
               задержек или недоступности.
-            </p>
-          </div>
+            </>
+          }
+          className={styles.banner}
+        />
 
-          <div className={styles.banner}>
-            <h3 className={styles.bannerTitle}>Ресурсы по запросу</h3>
-            <p className={styles.bannerDescription}>
+        <Banner
+          title="Ресурсы по запросу"
+          description={
+            <>
               В любой момент вы можете увеличить объём ОЗУ, ядер CPU, диска<br />
               или трафика за пару кликов без переустановки ОС и без остановки<br />
               сервера. <strong>Платите только за то, что реально используете.</strong>
-            </p>
-            <div className={styles.bannerList}>
-              <div className={styles.bannerListItem}>
-                <CheckIcon />
-                <p>Персонально выделенные ресурсы (без оверселлинга)</p>
-              </div>
-              <div className={styles.bannerListItem}>
-                <CheckIcon />
-                <p>Мгновенное масштабирование в реальном времени</p>
-              </div>
-              <div className={styles.bannerListItem}>
-                <CheckIcon />
-                <p>Полный контроль над мощностью под задачи проекта</p>
-              </div>
-            </div>
-          </div>
+            </>
+          }
+          list={[
+            'Персонально выделенные ресурсы (без оверселлинга)',
+            'Мгновенное масштабирование в реальном времени',
+            'Полный контроль над мощностью под задачи проекта',
+          ]}
+          className={styles.banner}
+        />
 
-          <div className={styles.banner}>
-            <h3 className={styles.bannerTitle}>Мощное современное железо</h3>
-            <p className={styles.bannerDescription}>
+        <Banner
+          title="Мощное современное железо"
+          description={
+            <>
               Производительные процессоры AMD EPYC последнего<br />
               поколения + сверхбыстрые NVMe-диски. Скорость чтения/записи<br />
               в разы выше обычных SSD. Идеально для <strong>высоконагруженных<br />
               сайтов, баз данных, CRM, VPN и любых ресурсоёмких задач.</strong>
-            </p>
-          </div>
+            </>
+          }
+          className={styles.banner}
+        />
 
-          <div className={styles.banner}>
-            <h3 className={styles.bannerTitle}>Комплексное решение для хостинга</h3>
-            <p className={styles.bannerDescription}>
+        <Banner
+          title="Комплексное решение для хостинга"
+          description={
+            <>
               Полная совместимость с Linux. Установка популярных панелей<br />
               управления за один клик: ISPmanager, Plesk, cPanel, DirectAdmin.<br />
               Благодаря Cloud-Init ваш сервер готов к работе уже через<br />
               30–60 секунд после заказа.
-            </p>
-            <div className={styles.bannerTags}>
-              <p>Plesk</p>
-              <p>cPanel</p>
-              <p>DirectAdmin</p>
-              <p>SSL</p>
-              <p>Spam filter</p>
-              <p>VPNs</p>
-            </div>
-          </div>
+            </>
+          }
+          tags={['Plesk', 'cPanel', 'DirectAdmin', 'SSL', 'Spam filter', 'VPNs']}
+          className={styles.banner}
+        />
       </section>
 
       <section className={styles.primeBannerSection}>
