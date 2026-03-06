@@ -1,0 +1,249 @@
+
+.hero {
+  position: relative;
+  grid-column: 1 / -1;
+  height: 569px;
+  padding-top: 8px;
+  background-color: #FBFAFB;
+  border-radius: 36px;
+}
+
+.descriptionBlock {
+  margin-left: 72px;
+  margin-bottom: 50px;
+  margin-top: 121px;
+}
+
+.title {
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 52px;
+  letter-spacing: -0.03em;
+}
+
+.description {
+  margin-bottom: 24px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #646464;
+
+  .strong {
+    font-weight: 700;
+  }
+}
+
+.button {
+  width: 300px;
+  height: 60px;
+}
+
+.options {
+  position: relative;
+  width: 684px;
+  display: flex;
+  gap: 48px;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.option:nth-child(2) {
+  margin-left: 70px;
+}
+
+.optionsLine {
+  position: absolute;
+  top: 22px;
+  left: 0;
+  width: 100%;
+  height: 0;
+  border: 2px solid #DBDAFE;
+}
+
+.optionIconWrapper {
+  width: fit-content;
+  border-radius: 30px;
+  border: 1px solid #DBDAFE;
+}
+
+.optionIcon {
+  position: relative;
+  padding: 8px;
+  width: fit-content;
+  border-radius: 30px;
+  border: 2px solid #FBFAFB;
+  background: linear-gradient(131.58deg, #DEDDFF 12.71%, #B3B1F4 86.1%);
+}
+
+.optionDescription {
+  min-width: 178px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #646464;
+  white-space: nowrap;
+}
+
+.heroBg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 620px;
+  height: 396px;
+  background: url('../../assets/hero-bg.png');
+  background-size: cover;
+}
+
+@media screen and (max-width: 1439px) and (min-width: 1024px) {
+  .hero {
+    height: 520px;
+  }
+  
+  .title {
+    font-size: 40px;
+    line-height: 44px;
+  }
+  
+  .description {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  
+  .options {
+    width: 600px;
+    gap: 30px;
+  }
+  
+  .option:nth-child(2) {
+    margin-left: 40px;
+  }
+
+  .optionDescription {
+    min-width: unset;
+    font-size: 13px;
+  }
+
+  .heroBg {
+    width: 480px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .hero {
+    height: auto;
+    min-height: 500px;
+    padding-bottom: 40px;
+  }
+  
+  .descriptionBlock {
+    margin-left: 40px;
+    margin-bottom: 40px;
+    max-width: 500px;
+  }
+  
+  .title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  
+  .description {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  
+  .button {
+    width: 260px;
+    height: 54px;
+  }
+  
+  .options {
+    width: 100%;
+    gap: 30px;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .option:nth-child(2) {
+    margin-left: 0;
+  }
+  
+  .option {
+    align-items: center;
+  }
+
+  .optionsLine {
+    width: 100%;
+  }
+  
+  .heroBg {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    width: 100%;
+    height: auto;
+    min-height: auto;
+    padding: 16px 10px 30px;
+    border-radius: 24px;
+  }
+  
+  .descriptionBlock {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 30px;
+  }
+  
+  .title {
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 12px;
+  }
+  
+  .description {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    width: 100%;
+    height: 48px;
+  }
+  
+  .options {
+    width: 100%;
+    gap: 20px;
+  }
+  
+  .option {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .option:nth-child(2) {
+    margin-left: 0;
+  }
+  
+  .optionsLine {
+    width: 100%;
+  }
+  
+  .optionDescription {
+    min-width: auto;
+    white-space: normal;
+  }
+  
+  .heroBg {
+    display: none;
+  }
+}
