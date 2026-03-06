@@ -1,10 +1,10 @@
 import cx from 'clsx';
 import { Button } from '@/shared/ui/Button/Button';
 import styles from './TariffCard.module.css';
-import CpuIcon from '../../assets/CPU.svg?react';
-import GlobeIcon from '../../assets/globe.svg?react';
-import SaveIcon from '../../assets/save.svg?react';
-import ServerIcon from '../../assets/server.svg?react';
+import CpuIcon from '../../../assets/CPU.svg?react';
+import GlobeIcon from '../../../assets/globe.svg?react';
+import SaveIcon from '../../../assets/save.svg?react';
+import ServerIcon from '../../../assets/server.svg?react';
 import StarIcon from '@/shared/assets/star.svg?react';
 
 interface TariffCardProps {
