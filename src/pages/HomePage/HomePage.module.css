@@ -17,45 +17,6 @@ section {
   gap: 20px;
 }
 
-.lightningBlock {
-  position: relative;
-  padding: 28px 0 0 28px;
-  height: 340px;
-  width: 83%;
-  background:
-    linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)),
-    linear-gradient(180deg, #645DF8 0%, #B3B1F2 100%);
-  border-radius: 30px;
-}
-
-.lightningTitle {
-  max-width: 326px;
-  margin: 20px 0 8px;
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 32px;
-  color: #FBFAFB;
-}
-
-.lightningDescription {
-  max-width: 326px;
-  font-size: 18px;
-  line-height: 24px;
-  color: #DBDAFE;
-  position: relative;
-  z-index: 10;
-}
-
-.lightningBg {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 208px;
-  height: 267px;
-  background: url('./assets/lightning.png');
-  background-size: cover;
-}
-
 .speedBlock {
   position: relative;
   padding: 28px 0 0 28px;
@@ -247,7 +208,7 @@ section {
     padding-right: 20px;
   }
 
-  .lightningBlock, .speedBlock {
+  .speedBlock {
     grid-column: 1 / -1;
     width: 100%;
     height: 250px;
@@ -261,12 +222,8 @@ section {
     top: -9px;
   }
 
-  .lightningTitle, .speedTitle {
+  .speedTitle {
     max-width: 100%;
-  }
-
-  .lightningDescription {
-    max-width: 436px;
   }
 
   .speedDescription {
@@ -314,21 +271,6 @@ section {
 
   section {
     width: 100%;
-  }
-
-  .lightningBlock {
-    grid-column: 1 / -1;
-    width: 100%;
-    height: fit-content;
-    padding-bottom: 28px;
-  }
-
-  .lightningTitle {
-    max-width: 50%;
-  }
-
-  .lightningDescription {
-    max-width: 50%;
   }
 
   .speedBlock {

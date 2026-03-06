@@ -12,8 +12,8 @@ import StarIcon from '@/shared/assets/star.svg?react';
 import { FAQ_LIST } from './config/faq';
 import { PrimeBanner } from './ui/PrimeBanner';
 import { Hero } from './ui/Hero';
+import { LightningBlock } from './ui/LightningBlock';
 
-import LightningIcon from './assets/lightning.svg?react';
 import SpeedIcon from './assets/speed.svg?react';
 
 import styles from './HomePage.module.css';
@@ -25,13 +25,7 @@ export function HomePage() {
 
       <section className={styles.heroSection}>
         <Hero />
-
-        <div className={styles.lightningBlock}>
-          <LightningIcon />
-          <h2 className={styles.lightningTitle}>Современная облачная инфраструктура</h2>
-          <p className={styles.lightningDescription}>Масштабируйте проект за минуты. Всё нужное уже внутри: Kubernetes, балансировщики, шлюзы.</p>
-          <div className={styles.lightningBg}></div>
-        </div>
+        <LightningBlock />
 
         <div className={styles.speedBlock}>
           <SpeedIcon />
