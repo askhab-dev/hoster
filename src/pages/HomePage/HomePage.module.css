@@ -26,29 +26,6 @@ section {
   border-radius: 36px;
 }
 
-.header {
-  position: fixed;
-  width: calc(1320px - 32px);
-  z-index: 11;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 67px;
-  padding: 0 56px;
-  margin-left: 16px;
-  background: #FFFFFF80;
-  border-radius: 24px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  backdrop-filter: blur(20px)
-}
-
-.navigation {
-  display: flex;
-  gap: 40px;
-}
-
 .descriptionBlock {
   margin-left: 72px;
   margin-bottom: 50px;
@@ -323,11 +300,6 @@ section {
   .hero {
     height: 520px;
   }
-
-  .header {
-    width: calc(1000px - 32px);
-    padding: 0 40px;
-  }
   
   .title {
     font-size: 40px;
@@ -412,18 +384,6 @@ section {
     height: auto;
     min-height: 500px;
     padding-bottom: 40px;
-  }
-  
-  .header {
-    width: calc(100% - 72px);
-    padding: 0 24px;
-    flex-wrap: wrap;
-    height: auto;
-    min-height: 67px;
-  }
-  
-  .navigation {
-    display: none;
   }
   
   .descriptionBlock {
@@ -546,17 +506,6 @@ section {
     min-height: auto;
     padding: 16px 10px 30px;
     border-radius: 24px;
-  }
-  
-  .header {
-    height: auto;
-    width: calc(100% - 43px);
-    padding: 16px;
-    gap: 16px;
-  }
-  
-  .navigation {
-    display: none;
   }
   
   .descriptionBlock {

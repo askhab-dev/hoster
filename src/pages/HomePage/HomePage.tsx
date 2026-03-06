@@ -6,9 +6,9 @@ import { FAQ } from '@/widgets/FAQ/FAQ';
 import { Footer } from '@/widgets/Footer';
 import { SupportForm } from '@/widgets/SupportForm/SupportForm';
 import { Banner } from '@/widgets/Banner';
+import { Header } from '@/widgets/Header';
 
 import { Button } from '@/shared/ui/Button/Button';
-import { Logo } from '@/shared/ui/Logo';
 import StarIcon from '@/shared/assets/star.svg?react';
 
 import { FAQ_LIST } from './config/faq';
@@ -24,19 +24,11 @@ import styles from './HomePage.module.css';
 
 export function HomePage() {
   return (
-    <div className={styles.container}>
+    <main className={styles.container}>
+      <Header />
+
       <section className={styles.heroSection}>
         <div className={styles.hero}>
-          <header className={styles.header}>
-            <Logo />
-            <nav className={styles.navigation}>
-              <a href="#">Продукты</a>
-              <a href="#">Партнерство</a>
-              <a href="#">Ресурсы</a>
-              <a href="#">Компания</a>
-            </nav>
-            <a href='#'>Вход / Регистрация</a>
-          </header>
           <div className={styles.descriptionBlock}>
             <h1 className={styles.title}>Cтабильный хостинг<br />для ваших проектов</h1>
             <p className={styles.description}>
@@ -49,6 +41,7 @@ export function HomePage() {
 
           <div className={styles.options}>
             <div className={styles.optionsLine}></div>
+
             <div className={styles.option}>
               <div className={styles.optionIconWrapper}>
                 <div className={styles.optionIcon}>
@@ -59,24 +52,29 @@ export function HomePage() {
                 Круглосуточная<br />поддержка экспертов
               </p>
             </div>
+
             <div className={styles.option}>
               <div className={styles.optionIconWrapper}>
                 <div className={styles.optionIcon}>
                   <GlobeIcon />
                 </div>
               </div>
+
               <p className={styles.optionDescription}>
                 Поддержка любого ПО<br />и ОС по вашему выбору
               </p>
             </div>
+
             <div className={styles.option}>
               <div className={styles.optionIconWrapper}>
                 <div className={styles.optionIcon}>
                   <ShieldIcon />
                 </div>
               </div>
+
               <p className={styles.optionDescription}>
-                Бесплатная защита<br />от DDoS-атак
+                Бесплатная защита<br />
+                от DDoS-атак
               </p>
             </div>
           </div>
@@ -200,6 +198,6 @@ export function HomePage() {
       </section>
 
       <Footer />
-    </div>
+    </main>
   )
 };
