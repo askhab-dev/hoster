@@ -13,8 +13,7 @@ import { FAQ_LIST } from './config/faq';
 import { PrimeBanner } from './ui/PrimeBanner';
 import { Hero } from './ui/Hero';
 import { LightningBlock } from './ui/LightningBlock';
-
-import SpeedIcon from './assets/speed.svg?react';
+import { SpeedBlock } from './ui/SpeedBlock';
 
 import styles from './HomePage.module.css';
 
@@ -26,13 +25,7 @@ export function HomePage() {
       <section className={styles.heroSection}>
         <Hero />
         <LightningBlock />
-
-        <div className={styles.speedBlock}>
-          <SpeedIcon />
-          <h2 className={styles.speedTitle}>Высокая скорость</h2>
-          <p className={styles.speedDescription}>Современные процессоры и сверхбыстрые NVMe SSD внутри каждого сервера</p>
-          <div className={styles.speedBg}></div>
-        </div>
+        <SpeedBlock />
       </section>
 
       <section className={styles.serviceSection}>

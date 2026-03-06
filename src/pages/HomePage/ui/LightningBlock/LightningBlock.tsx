@@ -14,7 +14,7 @@ export const LightningBlock = () => {
         Масштабируйте проект за минуты. Всё нужное уже внутри: Kubernetes, балансировщики, шлюзы.
       </p>
 
-      <div className={styles.lightningBg}></div>
+      <div className={styles.lightningBg} />
     </div>
   );
 };
