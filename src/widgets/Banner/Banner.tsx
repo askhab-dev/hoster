@@ -2,14 +2,7 @@ import cx from 'clsx';
 
 import styles from './Banner.module.css'
 import CheckIcon from './assets/check-broken.svg?react';
-
-interface BannerProps {
-  className?: string
-  title: string
-  description: React.ReactNode
-  list?: string[]
-  tags?: string[]
-}
+import type { BannerProps } from './Banner.types';
 
 export const Banner = (props: BannerProps) => {
   const { className, title, description, list, tags } = props;
