@@ -162,10 +162,6 @@ section {
     width: 100%;
   }
 
-  .tarrifsButton {
-    width: 80%;
-  }
-
   .banner {
     &:nth-child(1)::after {
       top: -223px;
