@@ -8,7 +8,6 @@ import SpeedIcon from './assets/speed.svg?react';
 import CheckIcon from './assets/check-broken.svg?react';
 import StarIcon from '@/shared/assets/star.svg?react';
 import Line from './assets/line.svg?react';
-import TelegramIcon from './assets/telegram.svg?react';
 
 import styles from './HomePage.module.css';
 import { MultiSwitcher } from '@/shared/ui/MultiSwitcher/MultiSwitcher';
@@ -17,6 +16,7 @@ import { FAQ } from '@/widgets/FAQ/FAQ';
 import { FAQ_LIST } from './config/faq';
 import { Footer } from '@/widgets/Footer';
 import { Logo } from '@/shared/ui/Logo';
+import { SupportForm } from '@/widgets/SupportForm/SupportForm';
 
 export function HomePage() {
   return (
@@ -212,33 +212,7 @@ export function HomePage() {
       <FAQ title='Часто задаваемые вопросы' list={FAQ_LIST} />
 
       <section className={styles.formSection}>
-        <form action="" className={styles.form}>
-          <h1 className={styles.formTitle}>Остались вопросы?</h1>
-
-          <p className={styles.formDescription}>
-            Наша поддержка всегда на связи.<br />
-            Свяжитесь с нами любым удобным способом.
-          </p>
-
-          <input type="email" name='email' placeholder='E-mail' className={styles.emailInput}/>
-
-          <textarea id="question" name="question" placeholder='Ваш вопрос' className={styles.questionTextarea} />
-
-          <Button variant='primary' className={styles.formButton} onClick={e => e.preventDefault()}>
-            Отправить
-          </Button>
-
-          <div className={styles.formLine} />
-
-          <p className={styles.telegramText}>
-            Или напишите нам в <strong>Telegram:</strong>
-          </p>
-
-          <a href="https://t.me/hosterhelp" target='_blank' className={styles.telegramTextLink}>
-            <TelegramIcon />
-            <span>t.me/hosterhelp</span>
-          </a>
-        </form>
+        <SupportForm />
       </section>
 
       <Footer />
