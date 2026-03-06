@@ -13,7 +13,7 @@ export const FAQ: React.FC<FAQProps> = (props) => {
   }
 
   return (
-    <section className={styles.faq}>
+    <>
       <h2 className={styles.title}>{title}</h2>
       <div className={styles.list}>
         {list.map((item) => (
@@ -24,11 +24,11 @@ export const FAQ: React.FC<FAQProps> = (props) => {
               aria-expanded={openId === item.id}
             >
               <span>{item.question}</span>
-              <ChevronDown 
+              <ChevronDown
                 className={`${styles.arrow} ${openId === item.id ? styles.rotated : ''}`}
               />
             </button>
-            <div 
+            <div
               className={`${styles.answer} ${openId === item.id ? styles.open : ''}`}
               aria-hidden={openId !== item.id}
             >
@@ -39,6 +39,6 @@ export const FAQ: React.FC<FAQProps> = (props) => {
           </div>
         ))}
       </div>
-    </section>
+    </>
   )
 };

@@ -834,7 +834,6 @@ section {
       background-size: 73%;
       opacity: 0.3;
     }
-
   }
 
   .primeBannerTitle {
@@ -847,5 +846,9 @@ section {
   }
   .primeBannerImage, .primeBannerLine {
     display: none;
+  }
+
+  .faq {
+    padding: 30px 16px;
   }
 }

@@ -107,10 +107,6 @@
 }
 
 @media (max-width: 768px) {
-  .faq {
-    padding: 30px 16px;
-  }
-  
   .title {
     font-size: 28px;
     margin-bottom: 30px;

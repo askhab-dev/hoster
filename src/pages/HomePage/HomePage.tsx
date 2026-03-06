@@ -209,7 +209,9 @@ export function HomePage() {
           </div>
       </section>
 
-      <FAQ title='Часто задаваемые вопросы' list={FAQ_LIST} />
+      <section className={styles.faq}>
+        <FAQ title='Часто задаваемые вопросы' list={FAQ_LIST} />
+      </section>
 
       <section className={styles.formSection}>
         <SupportForm />
