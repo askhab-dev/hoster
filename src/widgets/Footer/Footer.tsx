@@ -10,8 +10,13 @@ import VkIcon from './assets/vk.svg?react';
 import WhatsappIcon from './assets/whatsapp.svg?react';
 import TopIcon from './assets/top.svg?react';
 import { Logo } from '@/shared/ui/Logo/Logo';
+import { scrollToTop } from '@/shared/lib/scroll';
 
 export const Footer = () => {
+  const handleBackToTopBtnClick = () => {
+    scrollToTop();
+  }
+
   return (
     <footer>
       <div className={styles.footerFirstLine}>
@@ -53,13 +58,13 @@ export const Footer = () => {
               Соц-сети:
             </p>
             <div className={styles.footerSocials}>
-              <a href="vk.com" target='_blank'>
+              <a href="https://vk.com" target='_blank'>
                 <VkIcon />
               </a>
-              <a href="t.me" target='_blank'>
+              <a href="https://t.me" target='_blank'>
                 <TgIcon />
               </a>
-              <a href="whatsapp.com" target='_blank'>
+              <a href="https://whatsapp.com" target='_blank'>
                 <WhatsappIcon />
               </a>
             </div>
@@ -96,7 +101,7 @@ export const Footer = () => {
         </div>
 
         <div className={styles.footerEndBlock}>
-          <Button className={styles.backToTopBtn}>
+          <Button className={styles.backToTopBtn} onClick={handleBackToTopBtnClick}>
             <TopIcon />
             Вернуться в начало сайта
           </Button>
