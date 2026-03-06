@@ -1,0 +1,53 @@
+.serviceTitle {
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 52px;
+}
+
+.serviceDescription {
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #646464;
+}
+
+.tariffsSwitcher {
+  margin-bottom: 35px;
+}
+
+.tariffsContainer {
+  display: flex;
+  gap: 20px;
+  align-items: end;
+  overflow-y: hidden;
+}
+
+.tarrifsButton {
+  height: 60px;
+  width: 426px;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 1439px) and (min-width: 1024px) {
+  .tariffsContainer {
+    max-width: 1000px;
+    overflow-x: scroll;
+  }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .tariffsContainer {
+    max-width: 100%;
+    overflow-x: scroll;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .tariffsContainer {
+    max-width: 100%;
+    overflow-x: scroll;
+  }
+}

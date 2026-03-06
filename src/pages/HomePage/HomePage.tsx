@@ -1,19 +1,15 @@
-import { MultiSwitcher } from '@/shared/ui/MultiSwitcher/MultiSwitcher';
-import { TariffCard, TARIFFS } from '@/widgets/TariffCard';
 import { FAQ } from '@/widgets/FAQ/FAQ';
 import { Footer } from '@/widgets/Footer';
 import { SupportForm } from '@/widgets/SupportForm/SupportForm';
 import { Banner } from '@/widgets/Banner';
 import { Header } from '@/widgets/Header';
 
-import { Button } from '@/shared/ui/Button/Button';
-import StarIcon from '@/shared/assets/star.svg?react';
-
 import { FAQ_LIST } from './config/faq';
 import { PrimeBanner } from './ui/PrimeBanner';
 import { Hero } from './ui/Hero';
 import { LightningBlock } from './ui/LightningBlock';
 import { SpeedBlock } from './ui/SpeedBlock';
+import { Service } from './ui/Service';
 
 import styles from './HomePage.module.css';
 
@@ -29,31 +25,7 @@ export function HomePage() {
       </section>
 
       <section className={styles.serviceSection}>
-        <h1 className={styles.serviceTitle}>
-          Наши услуги
-        </h1>
-
-        <p className={styles.serviceDescription}>
-          Найдите VPS, который подойдёт под ваши задачи.
-        </p>
-
-        <MultiSwitcher
-          items={[
-            { id: 'a', label: 'Бюджетные тарифы' },
-            { id: 'b', label: 'Популярные тарифы', icon: <StarIcon /> },
-            { id: 'c', label: 'Производительные тарифы' },
-          ]}
-          defaultValue='a'
-          className={styles.tariffsSwitcher}
-        />
-
-        <div className={styles.tariffsContainer}>
-          {TARIFFS.map(item => <TariffCard key={item.name} {...item} />)}
-        </div>
-
-        <Button variant='secondary' className={styles.tarrifsButton}>
-          Смотреть все тарифы
-        </Button>
+        <Service />
       </section>
 
       <section className={styles.bannersSection}>

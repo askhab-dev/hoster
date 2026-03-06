@@ -1,4 +1,4 @@
-const TARIFFS = [
+export const TARIFFS = [
   {
     name: 'Стартовый Базовый',
     isPopular: true,
@@ -41,5 +41,3 @@ const TARIFFS = [
     price: '2,29'
   },
 ];
-
-export { TARIFFS };
