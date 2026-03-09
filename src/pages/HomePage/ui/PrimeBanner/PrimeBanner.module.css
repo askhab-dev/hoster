@@ -10,11 +10,11 @@
   justify-content: start;
   width: 100%;
   height: 360px;
-  margin-top: 32px;
+  margin-top: var(--gap-5xl);
   overflow: hidden;
-  border-radius: 36px;
+  border-radius: var(--border-radius-4xl);
   background:
-    linear-gradient(180deg, #645df8 0%, #b3b1f2 100%),
+    var(--color-gradient-purple),
     linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
 }
 
@@ -25,28 +25,28 @@
 .primeBannerTitle {
   max-width: 581px;
   margin-bottom: 16px;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 40px;
-  color: #fbfafb;
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-4xl);
+  line-height: var(--line-height-3xl);
+  color: var(--color-bg-white);
   letter-spacing: -0.03em;
 }
 
 .primeBannerDescription {
   max-width: 559px;
-  margin-bottom: 32px;
-  font-size: 18px;
-  line-height: 24px;
-  color: #dbdafe;
+  margin-bottom: var(--gap-5xl);
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-lg);
+  color: var(--color-primary-border);
 }
 
 .primeBannerButton {
   width: 315px;
   height: 60px;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 20px;
-  background: #fbfafb;
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-md);
+  background: var(--color-bg-white);
   border: none;
 }
 
@@ -94,7 +94,7 @@
 
   .primeBannerTitle {
     max-width: 414px;
-    font-size: 28px;
+    font-size: var(--font-size-3xl);
   }
 
   .primeBannerDescription {

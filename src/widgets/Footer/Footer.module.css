@@ -4,8 +4,8 @@ footer {
   flex-direction: column;
   justify-content: center;
   padding: 60px 9.8%;
-  gap: 24px;
-  border-top: 1px solid #656565b2;
+  gap: var(--gap-4xl);
+  border-top: 1px solid var(--color-accent-border);
 }
 
 .footerFirstLine {
@@ -15,7 +15,7 @@ footer {
   justify-content: center;
 }
 
-.footerLogo {
+span.footerLogo {
   letter-spacing: -0.03em;
 }
 
@@ -23,40 +23,40 @@ footer {
   transform: translateY(-5px);
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: var(--gap-xl);
 
   & > p {
     width: 264px;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-md);
     letter-spacing: -0.03em;
-    color: #646464;
+    color: var(--color-text-secondary);
   }
 }
 
-.footerSupportButton {
+button.footerSupportButton {
   display: flex;
-  gap: 12px;
+  gap: var(--gap-xl);
   align-items: center;
-  padding: 8px 5px;
+  padding: var(--gap-md) 5px;
   margin-right: 25px;
   height: 60px;
   flex: 1 1 fit-content;
   max-width: 539px;
-  border-radius: 16px;
+  border-radius: var(--border-radius-lg);
   border-width: 1.5px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-md);
   letter-spacing: -0.03em;
 }
 
 .footerChatIcon {
   width: 44px;
   height: 44px;
-  padding: 10px;
-  background: #746ef9;
-  border-radius: 8px;
+  padding: var(--gap-lg);
+  background: var(--color-primary);
+  border-radius: var(--border-radius-sm);
 }
 
 .footerFirstLineLists {
@@ -68,26 +68,26 @@ footer {
 .footerList {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: var(--gap-md);
 }
 
 .footerListLabel {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 24px;
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-lg);
 }
 
 .footerListItem {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  color: #646464;
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-md);
+  color: var(--color-text-secondary);
   white-space: nowrap;
 }
 
 .footerSocials {
   display: flex;
-  gap: 8px;
+  gap: var(--gap-md);
   min-width: 142px;
 }
 
@@ -100,11 +100,11 @@ footer {
 .footerCopyright {
   margin-right: 129px;
   margin-top: auto;
-  font-weight: 500;
-  font-size: 10px;
-  line-height: 14px;
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-xs);
   letter-spacing: -0.03em;
-  color: #646464;
+  color: var(--color-text-secondary);
 }
 
 .footerSecondLineLists {
@@ -123,27 +123,27 @@ footer {
   margin-top: auto;
 }
 
-.backToTopBtn {
+button.backToTopBtn {
   display: flex;
-  gap: 8px;
+  gap: var(--gap-md);
   height: 60px;
   width: 427px;
   justify-content: center;
   align-items: center;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-md);
   letter-spacing: -0.03em;
-  border: 1.5px solid #0f0c16;
-  border-radius: 16px;
+  border: 1.5px solid var(--color-text-primary);
+  border-radius: var(--border-radius-lg);
 }
 
 .footerLinks {
   display: flex;
   justify-content: space-between;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-md);
   letter-spacing: -0.03em;
   text-decoration-line: underline;
 
@@ -175,7 +175,7 @@ footer {
     gap: 10px;
   }
 
-  .footerSupportButton {
+  button.footerSupportButton {
     margin-right: 0;
     font-size: 13px;
   }
@@ -205,7 +205,7 @@ footer {
     margin-right: 18px;
   }
 
-  .backToTopBtn {
+  button.backToTopBtn {
     width: 300px;
   }
 
@@ -232,7 +232,7 @@ footer {
     gap: 15px;
   }
 
-  .footerSupportButton {
+  button.footerSupportButton {
     margin-right: unset;
     width: fit-content;
     flex: unset;
@@ -249,7 +249,7 @@ footer {
     margin-right: 18px;
   }
 
-  .backToTopBtn {
+  button.backToTopBtn {
     width: 100%;
   }
 
@@ -277,7 +277,7 @@ footer {
     gap: 15px;
   }
 
-  .footerSupportButton {
+  button.footerSupportButton {
     margin-right: unset;
     width: fit-content;
     flex: unset;
@@ -303,7 +303,7 @@ footer {
     margin-right: 18px;
   }
 
-  .backToTopBtn {
+  button.backToTopBtn {
     width: 100%;
   }
 

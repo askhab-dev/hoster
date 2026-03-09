@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background: #fbfafb;
+  background: var(--color-bg-white);
   border-radius: 40px;
 
   input,
@@ -16,14 +16,14 @@
   input,
   textarea {
     padding: 17px 28px;
-    border: 1px solid #646464;
-    border-radius: 16px;
+    border: 1px solid var(--color-text-secondary);
+    border-radius: var(--border-radius-lg);
 
     &::placeholder {
-      font-size: 16px;
-      line-height: 20px;
+      font-size: var(--font-size-base);
+      line-height: var(--line-height-md);
       letter-spacing: -0.03em;
-      color: #646464;
+      color: var(--color-text-secondary);
     }
   }
 }
@@ -31,17 +31,17 @@
 .formTitle {
   margin-top: 40px;
   margin-bottom: 16px;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 40px;
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-4xl);
+  line-height: var(--line-height-3xl);
   letter-spacing: -0.03em;
 }
 
 .formDescription {
   margin-bottom: 28px;
-  font-size: 18px;
-  line-height: 24px;
-  color: #646464;
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-lg);
+  color: var(--color-text-secondary);
 }
 
 .emailInput {
@@ -61,28 +61,28 @@
 .formLine {
   height: 0px;
   margin-bottom: 40px;
-  border: 1px solid #e9e8ed;
+  border: 1px solid var(--color-bg-light);
 }
 
 .telegramText {
   margin-bottom: 16px;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-lg);
   letter-spacing: -0.03em;
-  color: #646464;
+  color: var(--color-text-secondary);
 }
 
 .telegramTextLink {
   display: flex;
-  gap: 20px;
+  gap: var(--gap-3xl);
   margin-bottom: 44px;
-  padding: 8px 20px 8px 8px;
+  padding: var(--gap-md) var(--gap-3xl) var(--gap-md) var(--gap-md);
   justify-content: flex-start;
   align-items: center;
-  border-radius: 16px;
-  background: #e9e8ed;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 20px;
+  border-radius: var(--border-radius-lg);
+  background: var(--color-bg-input);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-md);
   letter-spacing: -0.03em;
 }

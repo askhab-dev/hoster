@@ -1,17 +1,17 @@
 .serviceTitle {
   margin-bottom: 16px;
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 52px;
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-6xl);
+  line-height: var(--line-height-4xl);
 }
 
 .serviceDescription {
   margin-bottom: 16px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
+  font-weight: var(--font-weight-light);
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-lg);
   text-align: center;
-  color: #646464;
+  color: var(--color-text-secondary);
 }
 
 .tariffsSwitcher {

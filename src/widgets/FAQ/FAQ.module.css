@@ -1,9 +1,9 @@
 .title {
-  margin-bottom: 40px;
+  margin-bottom: var(--gap-6xl);
 
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 52px;
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-6xl);
+  line-height: var(--line-height-4xl);
   text-align: center;
   letter-spacing: -0.03em;
 }
@@ -14,22 +14,22 @@
 }
 
 .item {
-  background: #fbfafb;
+  background: var(--color-bg-white);
   overflow: hidden;
-  transition: all 0.3s ease;
+  transition: all var(--transition-slower);
 
   &:not(:last-child) {
-    border-bottom: 2px solid #e9e8ed;
+    border-bottom: 2px solid var(--color-bg-light);
   }
 
   &:first-child {
-    border-top-left-radius: 36px;
-    border-top-right-radius: 36px;
+    border-top-left-radius: var(--border-radius-4xl);
+    border-top-right-radius: var(--border-radius-4xl);
   }
 
   &:last-child {
-    border-bottom-left-radius: 36px;
-    border-bottom-right-radius: 36px;
+    border-bottom-left-radius: var(--border-radius-4xl);
+    border-bottom-right-radius: var(--border-radius-4xl);
   }
 }
 
@@ -44,16 +44,16 @@
   align-items: center;
   justify-content: space-between;
   padding: 19px 28px;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 24px;
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-lg);
   text-align: left;
-  transition: background-color 0.2s;
+  transition: background-color var(--transition-slow);
   letter-spacing: -0.03em;
 }
 
 .question:hover {
-  background-color: #f8f8f8;
+  background-color: var(--color-bg-hover);
 }
 
 .question:focus-visible {
@@ -62,8 +62,8 @@
 }
 
 .arrow {
-  color: #666;
-  transition: transform 0.3s ease;
+  color: var(--color-accent-gray);
+  transition: transform var(--transition-slower);
   flex-shrink: 0;
 }
 
@@ -75,7 +75,7 @@
   max-height: 0;
   opacity: 0;
   overflow: hidden;
-  transition: all 0.3s ease-in-out;
+  transition: all var(--transition-slower);
   background-color: #fafafa;
 }
 
@@ -85,10 +85,10 @@
 }
 
 .answerContent {
-  padding: 0 24px 24px 24px;
+  padding: 0 var(--gap-4xl) var(--gap-4xl) var(--gap-4xl);
   font-size: 15px;
   line-height: 1.6;
-  color: #555;
+  color: var(--color-text-light);
 }
 
 @keyframes slideDown {
@@ -108,17 +108,17 @@
 
 @media (max-width: 768px) {
   .title {
-    font-size: 28px;
+    font-size: var(--font-size-3xl);
     margin-bottom: 30px;
   }
 
   .question {
-    padding: 16px 20px;
-    font-size: 15px;
+    padding: 16px var(--gap-3xl);
+    font-size: var(--font-size-sm-2);
   }
 
   .answerContent {
-    padding: 0 20px 20px 20px;
-    font-size: 14px;
+    padding: 0 var(--gap-3xl) var(--gap-3xl) var(--gap-3xl);
+    font-size: var(--font-size-sm-2);
   }
 }

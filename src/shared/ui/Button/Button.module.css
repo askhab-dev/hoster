@@ -1,18 +1,18 @@
 .button {
-  border-radius: 30px;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 20px;
+  border-radius: var(--border-radius-3xl);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-md);
   transition:
-    background-color 0.16s ease-out,
-    color 0.16s ease-out,
-    transform 0.12s ease-out,
-    box-shadow 0.12s ease-out,
-    outline 0.12s ease-out;
+    background-color var(--transition-base),
+    color var(--transition-base),
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast),
+    outline var(--transition-fast);
 }
 
 .button:disabled {
-  background: #646464;
+  background: var(--color-accent-disabled);
 }
 
 .button:hover {
@@ -20,15 +20,15 @@
 }
 
 .primary {
-  background: #746ef9;
-  color: #fbfafb;
+  background: var(--color-primary);
+  color: var(--color-bg-white);
 
   &:hover {
-    background: #857efc;
+    background: var(--color-primary-light);
   }
 }
 
 .secondary {
-  background: #dbdafe;
-  border: 2px solid #746ef9;
+  background: var(--color-primary-border);
+  border: 2px solid var(--color-primary);
 }

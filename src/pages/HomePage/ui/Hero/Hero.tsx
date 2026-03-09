@@ -1,12 +1,12 @@
-import { scrollToSection } from '@/shared/lib/scroll';
 import GlobeIcon from '../../assets/globe-white.svg?react';
 import MessageIcon from '../../assets/message.svg?react';
 import ShieldIcon from '../../assets/shield.svg?react';
 
 import styles from './Hero.module.css';
 
-import { Button } from '@/shared/ui/Button/Button';
 import { Sections } from '../../config/sections';
+import { Button } from '@/shared/ui/Button/Button';
+import { scrollToSection } from '@/shared/lib/scroll';
 
 export const Hero = () => {
   const handleChooseClick = () => {
