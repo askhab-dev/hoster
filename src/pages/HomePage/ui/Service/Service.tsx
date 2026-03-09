@@ -8,9 +8,7 @@ import { TARIFFS } from '../../config/tariffs';
 export const Service = () => {
   return (
     <>
-      <h1 className={styles.serviceTitle}>
-        Наши услуги
-      </h1>
+      <h1 className={styles.serviceTitle}>Наши услуги</h1>
 
       <p className={styles.serviceDescription}>
         Найдите VPS, который подойдёт под ваши задачи.
@@ -27,12 +25,14 @@ export const Service = () => {
       />
 
       <div className={styles.tariffsContainer}>
-        {TARIFFS.map(item => <TariffCard key={item.name} {...item} />)}
+        {TARIFFS.map((item) => (
+          <TariffCard key={item.name} {...item} />
+        ))}
       </div>
 
       <Button variant='secondary' className={styles.tarrifsButton}>
         Смотреть все тарифы
       </Button>
     </>
-  )
+  );
 };

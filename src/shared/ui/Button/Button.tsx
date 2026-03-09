@@ -1,11 +1,12 @@
-import styles from './Button.module.css';
 import cx from 'clsx';
+import styles from './Button.module.css';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'secondary';
 }
 
-export const Button = ({ children, variant, className, ...props }: ButtonProps) => {
+export const Button = (props: ButtonProps) => {
+  const { children, variant, className, ...restProps } = props;
   let variantClass = '';
 
   if (variant === 'primary') {
@@ -15,7 +16,10 @@ export const Button = ({ children, variant, className, ...props }: ButtonProps) 
   }
 
   return (
-    <button className={cx(styles.button, variantClass, className)} {...props}>
+    <button
+      className={cx(styles.button, variantClass, className)}
+      {...restProps}
+    >
       {children}
     </button>
   );

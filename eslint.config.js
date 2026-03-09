@@ -33,11 +33,19 @@ export default [
       'prettier/prettier': 'warn',
       'react/react-in-jsx-scope': 'off',
       'react/prop-types': 'off',
-      '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
+      '@typescript-eslint/no-unused-vars': [
+        'warn',
+        { argsIgnorePattern: '^_' },
+      ],
       'import/order': [
         'warn',
         {
-          groups: [['builtin', 'external'], 'internal', ['parent', 'sibling'], 'index'],
+          groups: [
+            ['builtin', 'external'],
+            'internal',
+            ['parent', 'sibling'],
+            'index',
+          ],
         },
       ],
     },

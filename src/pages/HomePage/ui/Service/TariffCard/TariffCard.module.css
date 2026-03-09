@@ -3,12 +3,12 @@
   flex-direction: column;
   align-items: center;
   min-width: 315px;
-  background: #746EF9;
+  background: #746ef9;
   border-radius: 30px;
 }
 
 .cardWrapper {
-  background: #FBFAFB;
+  background: #fbfafb;
   border-radius: 30px;
 }
 .card {
@@ -23,18 +23,18 @@
   font-weight: 500;
   font-size: 10px;
   line-height: 14px;
-  color: #FBFAFB;
+  color: #fbfafb;
   margin-top: 9px;
   margin-bottom: 7px;
 
   path {
-    fill: #FFD904;
-    stroke: #FFD904;
+    fill: #ffd904;
+    stroke: #ffd904;
   }
 }
 
 .cardWrapper.popular {
-  border: 4px solid #746EF9;
+  border: 4px solid #746ef9;
 
   .card {
     transform: translateY(5px);
@@ -115,13 +115,13 @@
   gap: 14px;
   align-items: center;
   padding: 0 18px 0;
-  border-top: 1px solid #DEDDFF;
+  border-top: 1px solid #deddff;
 }
 
 .oldPrice {
   position: relative;
   font-weight: 500;
-  color: #746EF9;
+  color: #746ef9;
 
   &::before {
     content: '';
@@ -130,8 +130,8 @@
     top: 45%;
     width: 100%;
     height: 0px;
-    border: 1px solid #746EF9;
-    background: #746EF9; 
+    border: 1px solid #746ef9;
+    background: #746ef9;
   }
 }
 
@@ -141,7 +141,7 @@
   margin-top: 12px;
   font-weight: 700;
   font-size: 28px;
-  color: #0F0C16;
+  color: #0f0c16;
 }
 
 .month {

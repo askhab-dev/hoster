@@ -11,13 +11,15 @@ import { Sections } from '../../config/sections';
 export const Hero = () => {
   const handleChooseClick = () => {
     scrollToSection(Sections.SERVICE);
-  }
+  };
 
   return (
     <div className={styles.hero}>
       <div className={styles.descriptionBlock}>
         <h1 className={styles.title}>
-          Cтабильный хостинг<br />для ваших проектов
+          Cтабильный хостинг
+          <br />
+          для ваших проектов
         </h1>
 
         <p className={styles.description}>
@@ -26,7 +28,11 @@ export const Hero = () => {
           <span className={styles.strong}>От 99₽ в месяц.</span>
         </p>
 
-        <Button className={styles.button} variant='primary' onClick={handleChooseClick}>
+        <Button
+          className={styles.button}
+          variant='primary'
+          onClick={handleChooseClick}
+        >
           Выбрать тариф
         </Button>
       </div>
@@ -42,7 +48,9 @@ export const Hero = () => {
           </div>
 
           <p className={styles.optionDescription}>
-            Круглосуточная<br />поддержка экспертов
+            Круглосуточная
+            <br />
+            поддержка экспертов
           </p>
         </div>
 
@@ -54,7 +62,8 @@ export const Hero = () => {
           </div>
 
           <p className={styles.optionDescription}>
-            Поддержка любого ПО<br />и ОС по вашему выбору
+            Поддержка любого ПО
+            <br />и ОС по вашему выбору
           </p>
         </div>
 
@@ -66,7 +75,8 @@ export const Hero = () => {
           </div>
 
           <p className={styles.optionDescription}>
-            Бесплатная защита<br />
+            Бесплатная защита
+            <br />
             от DDoS-атак
           </p>
         </div>

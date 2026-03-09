@@ -11,7 +11,8 @@ export const LightningBlock = () => {
       </h2>
 
       <p className={styles.lightningDescription}>
-        Масштабируйте проект за минуты. Всё нужное уже внутри: Kubernetes, балансировщики, шлюзы.
+        Масштабируйте проект за минуты. Всё нужное уже внутри: Kubernetes,
+        балансировщики, шлюзы.
       </p>
 
       <div className={styles.lightningBg} />

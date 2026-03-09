@@ -5,7 +5,7 @@
   justify-content: center;
   border-radius: 16px;
   padding: 5px;
-  background: #FBFAFB;
+  background: #fbfafb;
 }
 
 .item {
@@ -28,14 +28,14 @@
 
 .item:hover {
   transform: translateY(-1px);
-  background: #E9E8ED;
+  background: #e9e8ed;
 }
 
 .item.active {
-  background: #746EF9;
-  color: #FBFAFB;
+  background: #746ef9;
+  color: #fbfafb;
 
   path {
-    fill: #FBFAFB;
+    fill: #fbfafb;
   }
 }

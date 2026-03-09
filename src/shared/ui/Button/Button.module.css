@@ -20,8 +20,8 @@
 }
 
 .primary {
-  background: #746EF9;
-  color: #FBFAFB;
+  background: #746ef9;
+  color: #fbfafb;
 
   &:hover {
     background: #857efc;
@@ -29,6 +29,6 @@
 }
 
 .secondary {
-  background: #DBDAFE;
-  border: 2px solid #746EF9;
+  background: #dbdafe;
+  border: 2px solid #746ef9;
 }

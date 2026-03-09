@@ -5,4 +5,4 @@ export const enum Sections {
   PRIME_BANNER = 'primeBanner',
   FAQ = 'faq',
   SUPPORT_FORM = 'supportForm',
-};
+}

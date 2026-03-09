@@ -6,9 +6,7 @@ export const SpeedBlock = () => {
     <div className={styles.speedBlock}>
       <SpeedIcon />
 
-      <h2 className={styles.speedTitle}>
-        Высокая скорость
-      </h2>
+      <h2 className={styles.speedTitle}>Высокая скорость</h2>
       <p className={styles.speedDescription}>
         Современные процессоры и сверхбыстрые NVMe SSD внутри каждого сервера
       </p>

@@ -7,12 +7,12 @@ export const Header = () => {
     <header className={styles.header}>
       <Logo />
       <nav className={styles.navigation}>
-        <a href="#">Продукты</a>
-        <a href="#">Партнерство</a>
-        <a href="#">Ресурсы</a>
-        <a href="#">Компания</a>
+        <a href='#'>Продукты</a>
+        <a href='#'>Партнерство</a>
+        <a href='#'>Ресурсы</a>
+        <a href='#'>Компания</a>
       </nav>
       <a href='#'>Вход / Регистрация</a>
     </header>
-  )
+  );
 };

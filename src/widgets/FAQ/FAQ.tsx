@@ -1,16 +1,16 @@
-import { useState } from 'react'
-import ChevronDown from '@/shared/assets/chevron-down.svg?react'
-import styles from './FAQ.module.css'
+import { useState } from 'react';
+import styles from './FAQ.module.css';
 import type { FAQProps } from './FAQ.types';
+import ChevronDown from '@/shared/assets/chevron-down.svg?react';
 
 export const FAQ: React.FC<FAQProps> = (props) => {
   const { title, list } = props;
 
-  const [openId, setOpenId] = useState<number | null>(null)
+  const [openId, setOpenId] = useState<number | null>(null);
 
   const toggleItem = (id: number) => {
-    setOpenId(openId === id ? null : id)
-  }
+    setOpenId(openId === id ? null : id);
+  };
 
   return (
     <>
@@ -32,13 +32,11 @@ export const FAQ: React.FC<FAQProps> = (props) => {
               className={`${styles.answer} ${openId === item.id ? styles.open : ''}`}
               aria-hidden={openId !== item.id}
             >
-              <div className={styles.answerContent}>
-                {item.answer}
-              </div>
+              <div className={styles.answerContent}>{item.answer}</div>
             </div>
           </div>
         ))}
       </div>
     </>
-  )
+  );
 };

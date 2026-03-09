@@ -6,7 +6,7 @@
   height: 360px;
   width: 100%;
   padding: 0 113px;
-  background: #FBFAFB;
+  background: #fbfafb;
   border-radius: 36px;
   overflow: hidden;
 
@@ -23,7 +23,8 @@
   letter-spacing: -0.03em;
 }
 
-.bannerDescription, .bannerList {
+.bannerDescription,
+.bannerList {
   font-weight: 400;
   font-size: 20px;
   line-height: 26px;
@@ -57,14 +58,13 @@
     text-align: center;
     height: 34px;
     padding: 0 20px;
-    background: #DBDAFE;
+    background: #dbdafe;
     border-radius: 20px;
     font-size: 14px;
     font-weight: 500;
     line-height: 18px;
   }
 }
-
 
 @media screen and (max-width: 1023px) and (min-width: 768px) {
   .banner {

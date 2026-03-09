@@ -27,11 +27,17 @@ export function HomePage() {
         <SpeedBlock />
       </section>
 
-      <section className={styles.serviceSection} data-section={Sections.SERVICE}>
+      <section
+        className={styles.serviceSection}
+        data-section={Sections.SERVICE}
+      >
         <Service />
       </section>
 
-      <section className={styles.bannersSection} data-section={Sections.BANNERS}>
+      <section
+        className={styles.bannersSection}
+        data-section={Sections.BANNERS}
+      >
         {BANNERS.map((banner) => (
           <Banner
             key={banner.title}
@@ -44,7 +50,10 @@ export function HomePage() {
         ))}
       </section>
 
-      <section className={styles.primeBannerSection} data-section={Sections.PRIME_BANNER}>
+      <section
+        className={styles.primeBannerSection}
+        data-section={Sections.PRIME_BANNER}
+      >
         <PrimeBanner />
       </section>
 
@@ -52,11 +61,14 @@ export function HomePage() {
         <FAQ title='Часто задаваемые вопросы' list={FAQ_LIST} />
       </section>
 
-      <section className={styles.formSection} data-section={Sections.SUPPORT_FORM}>
+      <section
+        className={styles.formSection}
+        data-section={Sections.SUPPORT_FORM}
+      >
         <SupportForm />
       </section>
 
       <Footer />
     </main>
-  )
-};
+  );
+}

@@ -4,7 +4,7 @@
   height: 340px;
   width: 117%;
   transform: translateX(-112px);
-  background: #FBFAFB;
+  background: #fbfafb;
   border-radius: 30px;
   overflow: hidden;
 }
@@ -35,7 +35,6 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
-
 
 @media screen and (max-width: 1439px) and (min-width: 1024px) {
   .speedBlock {

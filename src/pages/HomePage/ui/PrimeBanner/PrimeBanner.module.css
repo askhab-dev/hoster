@@ -14,7 +14,7 @@
   overflow: hidden;
   border-radius: 36px;
   background:
-    linear-gradient(180deg, #645DF8 0%, #B3B1F2 100%),
+    linear-gradient(180deg, #645df8 0%, #b3b1f2 100%),
     linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
 }
 
@@ -28,7 +28,7 @@
   font-weight: 600;
   font-size: 36px;
   line-height: 40px;
-  color: #FBFAFB;
+  color: #fbfafb;
   letter-spacing: -0.03em;
 }
 
@@ -37,7 +37,7 @@
   margin-bottom: 32px;
   font-size: 18px;
   line-height: 24px;
-  color: #DBDAFE;
+  color: #dbdafe;
 }
 
 .primeBannerButton {
@@ -46,7 +46,7 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 20px;
-  background: #FBFAFB;
+  background: #fbfafb;
   border: none;
 }
 
@@ -101,7 +101,8 @@
     max-width: 549px;
   }
 
-  .primeBannerImage, .primeBannerLine {
+  .primeBannerImage,
+  .primeBannerLine {
     display: none;
   }
 }
