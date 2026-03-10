@@ -1,4 +1,4 @@
-import styles from './Service.module.css';
+import styles from './Service.module.scss';
 import { TariffCard } from './TariffCard/TariffCard';
 import { TARIFFS } from '../../config/tariffs';
 import { MultiSwitcher } from '@/shared/ui/MultiSwitcher/MultiSwitcher';

@@ -12,4 +12,11 @@ export default defineConfig({
     port: 3000,
     allowedHosts: true,
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@use '@/app/styles/breakpoints.scss' as *;`,
+      },
+    },
+  },
 });

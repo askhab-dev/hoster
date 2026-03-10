@@ -64,7 +64,7 @@
   z-index: 1;
 }
 
-@media screen and (max-width: 1439px) and (min-width: 1024px) {
+@include laptop {
   .primeBanner {
     padding-left: 65px;
   }
@@ -74,7 +74,7 @@
   }
 }
 
-@media screen and (max-width: 1023px) and (min-width: 768px) {
+@include tablet {
   .primeBanner {
     padding-left: 65px;
   }
@@ -84,7 +84,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@include mobile {
   .primeBanner {
     height: fit-content;
     padding: 35px 30px;

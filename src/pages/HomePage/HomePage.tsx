@@ -7,7 +7,7 @@ import { Hero } from './ui/Hero';
 import { LightningBlock } from './ui/LightningBlock';
 import { SpeedBlock } from './ui/SpeedBlock';
 
-import styles from './HomePage.module.css';
+import styles from './HomePage.module.scss';
 import { Header } from '@/widgets/Header';
 
 // lazy imports

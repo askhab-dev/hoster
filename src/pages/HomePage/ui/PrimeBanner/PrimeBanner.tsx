@@ -1,4 +1,4 @@
-import styles from './PrimeBanner.module.css';
+import styles from './PrimeBanner.module.scss';
 import Line from '../../assets/line.svg?react';
 import { Button } from '@/shared/ui/Button/Button';
 

@@ -106,7 +106,7 @@
   animation: slideDown 0.3s ease forwards;
 }
 
-@media (max-width: 768px) {
+@include mobile {
   .title {
     font-size: var(--font-size-3xl);
     margin-bottom: 30px;

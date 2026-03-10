@@ -1,5 +1,5 @@
-@import './variables.css';
-@import './fonts.css';
+@use './variables.scss';
+@use './fonts.scss';
 
 :root {
   font-family: 'Inter', sans-serif;

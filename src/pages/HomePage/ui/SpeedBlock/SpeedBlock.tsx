@@ -1,4 +1,4 @@
-import styles from './SpeedBlock.module.css';
+import styles from './SpeedBlock.module.scss';
 import SpeedIcon from '../../assets/speed.svg?react';
 
 export const SpeedBlock = () => {

@@ -1,5 +1,5 @@
 import cx from 'clsx';
-import styles from './Button.module.css';
+import styles from './Button.module.scss';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'secondary';

@@ -1,4 +1,4 @@
-import styles from './SupportForm.module.css';
+import styles from './SupportForm.module.scss';
 
 import TelegramIcon from './assets/telegram.svg?react';
 import { Button } from '@/shared/ui/Button/Button';

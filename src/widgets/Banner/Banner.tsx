@@ -1,6 +1,6 @@
 import cx from 'clsx';
 
-import styles from './Banner.module.css';
+import styles from './Banner.module.scss';
 import CheckIcon from './assets/check-broken.svg?react';
 import type { BannerProps } from './Banner.types';
 

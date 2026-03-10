@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import styles from './FAQ.module.css';
+import styles from './FAQ.module.scss';
 import type { FAQProps } from './FAQ.types';
 import ChevronDown from '@/shared/assets/chevron-down.svg?react';
 

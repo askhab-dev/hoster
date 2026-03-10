@@ -1,5 +1,5 @@
 import cx from 'clsx';
-import styles from './TariffCard.module.css';
+import styles from './TariffCard.module.scss';
 import CpuIcon from '../../../assets/CPU.svg?react';
 import GlobeIcon from '../../../assets/globe.svg?react';
 import SaveIcon from '../../../assets/save.svg?react';

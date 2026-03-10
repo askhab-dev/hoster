@@ -1,6 +1,6 @@
 import cx from 'clsx';
 
-import styles from './Footer.module.css';
+import styles from './Footer.module.scss';
 
 import ChatIcon from './assets/chat.svg?react';
 import TgIcon from './assets/tg.svg?react';

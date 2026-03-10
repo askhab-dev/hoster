@@ -2,7 +2,7 @@ import GlobeIcon from '../../assets/globe-white.svg?react';
 import MessageIcon from '../../assets/message.svg?react';
 import ShieldIcon from '../../assets/shield.svg?react';
 
-import styles from './Hero.module.css';
+import styles from './Hero.module.scss';
 
 import { Sections } from '../../config/sections';
 import { Button } from '@/shared/ui/Button/Button';

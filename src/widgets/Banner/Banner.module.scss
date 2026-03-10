@@ -66,14 +66,14 @@
   }
 }
 
-@media screen and (max-width: 1023px) and (min-width: 768px) {
+@include tablet {
   .banner {
     height: fit-content;
     padding: 35px 30px;
   }
 }
 
-@media screen and (max-width: 767px) {
+@include mobile {
   .banner {
     height: fit-content;
     padding: 35px 30px;

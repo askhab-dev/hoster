@@ -31,7 +31,7 @@
   right: 0;
 }
 
-@media screen and (max-width: 1023px) and (min-width: 768px) {
+@include tablet {
   .lightningBlock {
     grid-column: 1 / -1;
     width: 100%;
@@ -47,7 +47,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@include mobile {
   .lightningBlock {
     grid-column: 1 / -1;
     width: 100%;

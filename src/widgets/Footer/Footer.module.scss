@@ -152,7 +152,7 @@ button.backToTopBtn {
   }
 }
 
-@media screen and (max-width: 1650px) and (min-width: 1440px) {
+@include desktop-md {
   .footerFirstLine {
     gap: 40px;
   }
@@ -170,7 +170,7 @@ button.backToTopBtn {
   }
 }
 
-@media screen and (max-width: 1439px) and (min-width: 1024px) {
+@include laptop {
   .footerFirstLine {
     gap: 10px;
   }
@@ -227,7 +227,7 @@ button.backToTopBtn {
   }
 }
 
-@media screen and (max-width: 1023px) and (min-width: 768px) {
+@include tablet {
   .footerFirstLine {
     gap: 15px;
   }
@@ -268,7 +268,7 @@ button.backToTopBtn {
   }
 }
 
-@media screen and (max-width: 767px) {
+@include mobile {
   footer {
     padding: 15px;
   }

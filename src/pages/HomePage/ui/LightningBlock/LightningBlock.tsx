@@ -1,4 +1,4 @@
-import styles from './LightningBlock.module.css';
+import styles from './LightningBlock.module.scss';
 import LightningIcon from '../../assets/lightning.svg?react';
 
 export const LightningBlock = () => {

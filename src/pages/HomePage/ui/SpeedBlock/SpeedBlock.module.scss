@@ -33,7 +33,7 @@
   right: -2px;
 }
 
-@media screen and (max-width: 1439px) and (min-width: 1024px) {
+@include laptop {
   .speedBlock {
     transform: translateX(-82px);
   }
@@ -43,7 +43,7 @@
   }
 }
 
-@media screen and (max-width: 1023px) and (min-width: 768px) {
+@include tablet {
   .speedBlock {
     grid-column: 1 / -1;
     width: 100%;
@@ -67,7 +67,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@include mobile {
   .speedBlock {
     grid-column: 1 / -1;
     width: 100%;

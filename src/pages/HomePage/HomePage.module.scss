@@ -81,7 +81,7 @@ section {
   max-width: 874px;
 }
 
-@media screen and (max-width: 1439px) and (min-width: 1024px) {
+@include laptop {
   section {
     width: 1000px;
   }
@@ -112,7 +112,7 @@ section {
   }
 }
 
-@media screen and (max-width: 1023px) and (min-width: 768px) {
+@include tablet {
   .container {
     margin-top: 16px;
   }
@@ -151,7 +151,7 @@ section {
   }
 }
 
-@media screen and (max-width: 767px) {
+@include mobile {
   .container {
     margin-top: 12px;
     padding: 0 1px;

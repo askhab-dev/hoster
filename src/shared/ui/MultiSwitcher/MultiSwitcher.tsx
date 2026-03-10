@@ -1,6 +1,6 @@
 import { useState, type ReactNode } from 'react';
 import cx from 'clsx';
-import styles from './MultiSwitcher.module.css';
+import styles from './MultiSwitcher.module.scss';
 
 export type SwitcherId = string | number;
 
