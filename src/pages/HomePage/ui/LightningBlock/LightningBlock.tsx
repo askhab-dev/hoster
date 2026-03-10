@@ -15,7 +15,16 @@ export const LightningBlock = () => {
         балансировщики, шлюзы.
       </p>
 
-      <div className={styles.lightningBg} />
+      <picture>
+        <source srcSet='/lightning.webp' type='image/webp' />
+        <img
+          alt=''
+          src='/lightning.png'
+          className={styles.lightningBg}
+          width='208'
+          height='267'
+        />
+      </picture>
     </div>
   );
 };
