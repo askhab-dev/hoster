@@ -94,8 +94,6 @@
   right: 0;
   width: 620px;
   height: 396px;
-  background: url('../../assets/hero-bg.png');
-  background-size: cover;
 }
 
 @media screen and (max-width: 1439px) and (min-width: 1024px) {

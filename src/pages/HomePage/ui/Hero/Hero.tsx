@@ -82,7 +82,15 @@ export const Hero = () => {
         </div>
       </div>
 
-      <div className={styles.heroBg}></div>
+      <picture>
+        <source srcSet='/hero-bg.webp' type='image/webp' />
+        <img
+          className={styles.heroBg}
+          src='/hero-bg.png'
+          alt='Don`t give up'
+          fetchPriority='high'
+        />
+      </picture>
     </div>
   );
 };
