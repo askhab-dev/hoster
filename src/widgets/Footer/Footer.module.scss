@@ -4,8 +4,8 @@ footer {
   flex-direction: column;
   justify-content: center;
   padding: 60px 9.8%;
-  gap: var(--gap-4xl);
-  border-top: 1px solid var(--color-accent-border);
+  gap: $gap-4xl;
+  border-top: 1px solid $color-accent-border;
 }
 
 .footerFirstLine {
@@ -23,40 +23,40 @@ span.footerLogo {
   transform: translateY(-5px);
   display: flex;
   flex-direction: column;
-  gap: var(--gap-xl);
+  gap: $gap-xl;
 
   & > p {
     width: 264px;
-    font-size: var(--font-size-base);
-    line-height: var(--line-height-md);
+    font-size: $font-size-base;
+    line-height: $line-height-md;
     letter-spacing: -0.03em;
-    color: var(--color-text-secondary);
+    color: $color-text-secondary;
   }
 }
 
 button.footerSupportButton {
   display: flex;
-  gap: var(--gap-xl);
+  gap: $gap-xl;
   align-items: center;
-  padding: var(--gap-md) 5px;
+  padding: $gap-md 5px;
   margin-right: 25px;
   height: 60px;
   flex: 1 1 fit-content;
   max-width: 539px;
-  border-radius: var(--border-radius-lg);
+  border-radius: $border-radius-lg;
   border-width: 1.5px;
-  font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-base);
-  line-height: var(--line-height-md);
+  font-weight: $font-weight-medium;
+  font-size: $font-size-base;
+  line-height: $line-height-md;
   letter-spacing: -0.03em;
 }
 
 .footerChatIcon {
   width: 44px;
   height: 44px;
-  padding: var(--gap-lg);
-  background: var(--color-primary);
-  border-radius: var(--border-radius-sm);
+  padding: $gap-lg;
+  background: $color-primary;
+  border-radius: $border-radius-sm;
 }
 
 .footerFirstLineLists {
@@ -68,26 +68,26 @@ button.footerSupportButton {
 .footerList {
   display: flex;
   flex-direction: column;
-  gap: var(--gap-md);
+  gap: $gap-md;
 }
 
 .footerListLabel {
-  font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-md);
-  line-height: var(--line-height-lg);
+  font-weight: $font-weight-medium;
+  font-size: $font-size-md;
+  line-height: $line-height-lg;
 }
 
 .footerListItem {
-  font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-base);
-  line-height: var(--line-height-md);
-  color: var(--color-text-secondary);
+  font-weight: $font-weight-medium;
+  font-size: $font-size-base;
+  line-height: $line-height-md;
+  color: $color-text-secondary;
   white-space: nowrap;
 }
 
 .footerSocials {
   display: flex;
-  gap: var(--gap-md);
+  gap: $gap-md;
   min-width: 142px;
 }
 
@@ -100,11 +100,11 @@ button.footerSupportButton {
 .footerCopyright {
   margin-right: 129px;
   margin-top: auto;
-  font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-xs);
-  line-height: var(--line-height-xs);
+  font-weight: $font-weight-medium;
+  font-size: $font-size-xs;
+  line-height: $line-height-xs;
   letter-spacing: -0.03em;
-  color: var(--color-text-secondary);
+  color: $color-text-secondary;
 }
 
 .footerSecondLineLists {
@@ -125,25 +125,25 @@ button.footerSupportButton {
 
 button.backToTopBtn {
   display: flex;
-  gap: var(--gap-md);
+  gap: $gap-md;
   height: 60px;
   width: 427px;
   justify-content: center;
   align-items: center;
-  font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-base);
-  line-height: var(--line-height-md);
+  font-weight: $font-weight-medium;
+  font-size: $font-size-base;
+  line-height: $line-height-md;
   letter-spacing: -0.03em;
-  border: 1.5px solid var(--color-text-primary);
-  border-radius: var(--border-radius-lg);
+  border: 1.5px solid $color-text-primary;
+  border-radius: $border-radius-lg;
 }
 
 .footerLinks {
   display: flex;
   justify-content: space-between;
-  font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-base);
-  line-height: var(--line-height-md);
+  font-weight: $font-weight-medium;
+  font-size: $font-size-base;
+  line-height: $line-height-md;
   letter-spacing: -0.03em;
   text-decoration-line: underline;
 

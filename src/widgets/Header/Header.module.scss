@@ -9,16 +9,16 @@
   height: 67px;
   padding: 0 56px;
   background: #ffffff80;
-  border-radius: var(--border-radius-2xl);
-  font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-sm-2);
-  line-height: var(--line-height-sm-2);
+  border-radius: $border-radius-2xl;
+  font-weight: $font-weight-medium;
+  font-size: $font-size-sm-2;
+  line-height: $line-height-sm-2;
   backdrop-filter: blur(20px);
 }
 
 .navigation {
   display: flex;
-  gap: var(--gap-6xl);
+  gap: $gap-6xl;
 }
 
 @include laptop {

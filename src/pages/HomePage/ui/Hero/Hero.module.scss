@@ -3,8 +3,8 @@
   grid-column: 1 / -1;
   height: 569px;
   padding-top: 8px;
-  background-color: var(--color-bg-white);
-  border-radius: var(--border-radius-4xl);
+  background-color: $color-bg-white;
+  border-radius: $border-radius-4xl;
 }
 
 .descriptionBlock {
@@ -15,18 +15,18 @@
 
 .title {
   margin-bottom: 16px;
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-6xl);
-  line-height: var(--line-height-4xl);
+  font-weight: $font-weight-bold;
+  font-size: $font-size-6xl;
+  line-height: $line-height-4xl;
   letter-spacing: -0.03em;
 }
 
 .description {
-  margin-bottom: var(--gap-4xl);
-  font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-lg);
-  line-height: var(--line-height-xl);
-  color: var(--color-text-secondary);
+  margin-bottom: $gap-4xl;
+  font-weight: $font-weight-medium;
+  font-size: $font-size-lg;
+  line-height: $line-height-xl;
+  color: $color-text-secondary;
 
   .strong {
     font-weight: 700;
@@ -61,30 +61,30 @@
   left: 0;
   width: 100%;
   height: 0;
-  border: 2px solid var(--color-primary-border);
+  border: 2px solid $color-primary-border;
 }
 
 .optionIconWrapper {
   width: fit-content;
-  border-radius: var(--border-radius-3xl);
-  border: 1px solid var(--color-primary-border);
+  border-radius: $border-radius-3xl;
+  border: 1px solid $color-primary-border;
 }
 
 .optionIcon {
   position: relative;
-  padding: var(--gap-md);
+  padding: $gap-md;
   width: fit-content;
-  border-radius: var(--border-radius-3xl);
-  border: 2px solid var(--color-bg-white);
-  background: var(--color-gradient-primary);
+  border-radius: $border-radius-3xl;
+  border: 2px solid $color-bg-white;
+  background: $color-gradient-primary;
 }
 
 .optionDescription {
   min-width: 178px;
-  font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-base);
-  line-height: var(--line-height-md);
-  color: var(--color-text-secondary);
+  font-weight: $font-weight-medium;
+  font-size: $font-size-base;
+  line-height: $line-height-md;
+  color: $color-text-secondary;
   white-space: nowrap;
 }
 
@@ -102,13 +102,13 @@
   }
 
   .title {
-    font-size: var(--font-size-5xl);
+    font-size: $font-size-5xl;
     line-height: 44px;
   }
 
   .description {
-    font-size: var(--font-size-md);
-    line-height: var(--line-height-lg);
+    font-size: $font-size-md;
+    line-height: $line-height-lg;
   }
 
   .options {
@@ -150,7 +150,7 @@
   }
 
   .description {
-    font-size: var(--font-size-base);
+    font-size: $font-size-base;
     line-height: 22px;
   }
 
@@ -190,7 +190,7 @@
     height: auto;
     min-height: auto;
     padding: 16px 10px 30px;
-    border-radius: var(--border-radius-2xl);
+    border-radius: $border-radius-2xl;
   }
 
   .descriptionBlock {
@@ -200,15 +200,15 @@
   }
 
   .title {
-    font-size: var(--font-size-3xl);
-    line-height: var(--line-height-2xl);
-    margin-bottom: var(--gap-xl);
+    font-size: $font-size-3xl;
+    line-height: $line-height-2xl;
+    margin-bottom: $gap-xl;
   }
 
   .description {
-    font-size: var(--font-size-sm-2);
-    line-height: var(--line-height-md);
-    margin-bottom: var(--gap-3xl);
+    font-size: $font-size-sm-2;
+    line-height: $line-height-md;
+    margin-bottom: $gap-3xl;
   }
 
   .button {

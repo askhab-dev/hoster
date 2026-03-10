@@ -6,8 +6,8 @@
   height: 360px;
   width: 100%;
   padding: 0 113px;
-  background: var(--color-bg-white);
-  border-radius: var(--border-radius-4xl);
+  background: $color-bg-white;
+  border-radius: $border-radius-4xl;
   overflow: hidden;
 
   > * {
@@ -17,37 +17,37 @@
 
 .bannerTitle {
   margin-bottom: 16px;
-  font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-3xl);
-  line-height: var(--line-height-2xl);
+  font-weight: $font-weight-medium;
+  font-size: $font-size-3xl;
+  line-height: $line-height-2xl;
   letter-spacing: -0.03em;
 }
 
 .bannerDescription,
 .bannerList {
-  font-weight: var(--font-weight-light);
-  font-size: var(--font-size-lg);
-  line-height: var(--line-height-xl);
-  color: var(--color-text-secondary);
+  font-weight: $font-weight-light;
+  font-size: $font-size-lg;
+  line-height: $line-height-xl;
+  color: $color-text-secondary;
   letter-spacing: -0.03em;
 }
 
 .bannerList {
   display: flex;
   flex-direction: column;
-  margin-top: var(--gap-3xl);
-  gap: var(--gap-3xl);
+  margin-top: $gap-3xl;
+  gap: $gap-3xl;
   padding-top: 3px;
 }
 
 .bannerListItem {
   display: flex;
-  gap: var(--gap-3xl);
+  gap: $gap-3xl;
 }
 
 .bannerTags {
   display: flex;
-  gap: var(--gap-lg);
+  gap: $gap-lg;
   flex-wrap: wrap;
   margin-top: 34px;
 
@@ -57,12 +57,12 @@
     justify-content: center;
     text-align: center;
     height: 34px;
-    padding: 0 var(--gap-3xl);
-    background: var(--color-primary-border);
-    border-radius: var(--border-radius-xl);
-    font-size: var(--font-size-sm-2);
-    font-weight: var(--font-weight-medium);
-    line-height: var(--line-height-base);
+    padding: 0 $gap-3xl;
+    background: $color-primary-border;
+    border-radius: $border-radius-xl;
+    font-size: $font-size-sm-2;
+    font-weight: $font-weight-medium;
+    line-height: $line-height-base;
   }
 }
 

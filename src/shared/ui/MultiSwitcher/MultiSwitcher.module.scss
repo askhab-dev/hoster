@@ -3,39 +3,39 @@
   flex-wrap: wrap;
   width: fit-content;
   justify-content: center;
-  border-radius: var(--border-radius-lg);
+  border-radius: $border-radius-lg;
   padding: 5px;
-  background: var(--color-bg-white);
+  background: $color-bg-white;
 }
 
 .item {
   display: flex;
-  gap: var(--gap-xs);
+  gap: $gap-xs;
   align-items: center;
-  padding: var(--gap-md) var(--gap-3xl);
+  padding: $gap-md $gap-3xl;
   border: none;
-  border-radius: var(--border-radius-md);
+  border-radius: $border-radius-md;
   transition:
-    background-color var(--transition-base),
-    color var(--transition-base),
-    transform var(--transition-fast),
-    box-shadow var(--transition-fast);
+    background-color $transition-base,
+    color $transition-base,
+    transform $transition-fast,
+    box-shadow $transition-fast;
   white-space: nowrap;
-  font-weight: var(--font-weight-light);
-  font-size: var(--font-size-sm-2);
-  line-height: var(--line-height-base);
+  font-weight: $font-weight-light;
+  font-size: $font-size-sm-2;
+  line-height: $line-height-base;
 }
 
 .item:hover {
   transform: translateY(-1px);
-  background: var(--color-bg-light);
+  background: $color-bg-light;
 }
 
 .item.active {
-  background: var(--color-primary);
-  color: var(--color-bg-white);
+  background: $color-primary;
+  color: $color-bg-white;
 
   path {
-    fill: var(--color-bg-white);
+    fill: $color-bg-white;
   }
 }

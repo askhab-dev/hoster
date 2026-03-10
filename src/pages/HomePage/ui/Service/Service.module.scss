@@ -1,17 +1,17 @@
 .serviceTitle {
   margin-bottom: 16px;
-  font-weight: var(--font-weight-semibold);
-  font-size: var(--font-size-6xl);
-  line-height: var(--line-height-4xl);
+  font-weight: $font-weight-semibold;
+  font-size: $font-size-6xl;
+  line-height: $line-height-4xl;
 }
 
 .serviceDescription {
   margin-bottom: 16px;
-  font-weight: var(--font-weight-light);
-  font-size: var(--font-size-md);
-  line-height: var(--line-height-lg);
+  font-weight: $font-weight-light;
+  font-size: $font-size-md;
+  line-height: $line-height-lg;
   text-align: center;
-  color: var(--color-text-secondary);
+  color: $color-text-secondary;
 }
 
 .tariffsSwitcher {

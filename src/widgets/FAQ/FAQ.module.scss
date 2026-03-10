@@ -1,9 +1,9 @@
 .title {
-  margin-bottom: var(--gap-6xl);
+  margin-bottom: $gap-6xl;
 
-  font-weight: var(--font-weight-semibold);
-  font-size: var(--font-size-6xl);
-  line-height: var(--line-height-4xl);
+  font-weight: $font-weight-semibold;
+  font-size: $font-size-6xl;
+  line-height: $line-height-4xl;
   text-align: center;
   letter-spacing: -0.03em;
 }
@@ -14,22 +14,22 @@
 }
 
 .item {
-  background: var(--color-bg-white);
+  background: $color-bg-white;
   overflow: hidden;
-  transition: all var(--transition-slower);
+  transition: all $transition-slower;
 
   &:not(:last-child) {
-    border-bottom: 2px solid var(--color-bg-light);
+    border-bottom: 2px solid $color-bg-light;
   }
 
   &:first-child {
-    border-top-left-radius: var(--border-radius-4xl);
-    border-top-right-radius: var(--border-radius-4xl);
+    border-top-left-radius: $border-radius-4xl;
+    border-top-right-radius: $border-radius-4xl;
   }
 
   &:last-child {
-    border-bottom-left-radius: var(--border-radius-4xl);
-    border-bottom-right-radius: var(--border-radius-4xl);
+    border-bottom-left-radius: $border-radius-4xl;
+    border-bottom-right-radius: $border-radius-4xl;
   }
 }
 
@@ -44,16 +44,16 @@
   align-items: center;
   justify-content: space-between;
   padding: 19px 28px;
-  font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-md);
-  line-height: var(--line-height-lg);
+  font-weight: $font-weight-medium;
+  font-size: $font-size-md;
+  line-height: $line-height-lg;
   text-align: left;
-  transition: background-color var(--transition-slow);
+  transition: background-color $transition-slow;
   letter-spacing: -0.03em;
 }
 
 .question:hover {
-  background-color: var(--color-bg-hover);
+  background-color: $color-bg-hover;
 }
 
 .question:focus-visible {
@@ -62,8 +62,8 @@
 }
 
 .arrow {
-  color: var(--color-accent-gray);
-  transition: transform var(--transition-slower);
+  color: $color-accent-gray;
+  transition: transform $transition-slower;
   flex-shrink: 0;
 }
 
@@ -75,7 +75,7 @@
   max-height: 0;
   opacity: 0;
   overflow: hidden;
-  transition: all var(--transition-slower);
+  transition: all $transition-slower;
   background-color: #fafafa;
 }
 
@@ -85,10 +85,10 @@
 }
 
 .answerContent {
-  padding: 0 var(--gap-4xl) var(--gap-4xl) var(--gap-4xl);
+  padding: 0 $gap-4xl $gap-4xl $gap-4xl;
   font-size: 15px;
   line-height: 1.6;
-  color: var(--color-text-light);
+  color: $color-text-light;
 }
 
 @keyframes slideDown {
@@ -108,17 +108,17 @@
 
 @include mobile {
   .title {
-    font-size: var(--font-size-3xl);
+    font-size: $font-size-3xl;
     margin-bottom: 30px;
   }
 
   .question {
-    padding: 16px var(--gap-3xl);
-    font-size: var(--font-size-sm-2);
+    padding: 16px $gap-3xl;
+    font-size: $font-size-sm-2;
   }
 
   .answerContent {
-    padding: 0 var(--gap-3xl) var(--gap-3xl) var(--gap-3xl);
-    font-size: var(--font-size-sm-2);
+    padding: 0 $gap-3xl $gap-3xl $gap-3xl;
+    font-size: $font-size-sm-2;
   }
 }
