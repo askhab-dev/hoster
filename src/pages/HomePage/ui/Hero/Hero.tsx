@@ -7,8 +7,11 @@ import styles from './Hero.module.scss';
 import { Sections } from '../../config/sections';
 import { Button } from '@/shared/ui/Button/Button';
 import { scrollToSection } from '@/shared/lib/scroll';
+import { useDevice } from '@/shared/lib/hooks/useDevice';
 
 export const Hero = () => {
+  const { isMobileOrTablet } = useDevice();
+
   const handleChooseClick = () => {
     scrollToSection(Sections.SERVICE);
   };
@@ -82,15 +85,17 @@ export const Hero = () => {
         </div>
       </div>
 
-      <picture>
-        <source srcSet='/hero-bg.webp' type='image/webp' />
-        <img
-          className={styles.heroBg}
-          src='/hero-bg.png'
-          alt='Don`t give up'
-          fetchPriority='high'
-        />
-      </picture>
+      {isMobileOrTablet ? null : (
+        <picture>
+          <source srcSet='/hero-bg.webp' type='image/webp' />
+          <img
+            className={styles.heroBg}
+            src='/hero-bg.png'
+            alt='Don`t give up'
+            fetchPriority='high'
+          />
+        </picture>
+      )}
     </div>
   );
 };

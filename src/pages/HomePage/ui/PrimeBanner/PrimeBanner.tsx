@@ -1,8 +1,11 @@
 import styles from './PrimeBanner.module.scss';
 import Line from '../../assets/line.svg?react';
 import { Button } from '@/shared/ui/Button/Button';
+import { useDevice } from '@/shared/lib/hooks/useDevice';
 
 export const PrimeBanner = () => {
+  const { isMobile } = useDevice();
+
   return (
     <div className={styles.primeBannerWrapper}>
       <div className={styles.primeBanner}>
@@ -28,18 +31,20 @@ export const PrimeBanner = () => {
         <Line className={styles.primeBannerLine} />
       </div>
 
-      <picture>
-        <source srcSet='/lights.webp' type='image/webp' />
-        <img
-          src='/lights.png'
-          alt='Lights'
-          className={styles.primeBannerImage}
-          loading='lazy'
-          width='154'
-          height='392'
-          fetchPriority='low'
-        />
-      </picture>
+      {isMobile ? null : (
+        <picture>
+          <source srcSet='/lights.webp' type='image/webp' />
+          <img
+            src='/lights.png'
+            alt='Lights'
+            className={styles.primeBannerImage}
+            loading='lazy'
+            width='154'
+            height='392'
+            fetchPriority='low'
+          />
+        </picture>
+      )}
     </div>
   );
 };
