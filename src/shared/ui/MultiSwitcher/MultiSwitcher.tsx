@@ -36,7 +36,7 @@ const SwitcherComponent = <T extends SwitcherId>(
 
         return (
           <button
-            key={String(item.id)}
+            key={item.id}
             type='button'
             className={cx(
               styles.item,
