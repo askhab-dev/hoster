@@ -28,7 +28,12 @@ export const PrimeBanner = () => {
         <Line className={styles.primeBannerLine} />
       </div>
 
-      <img src='/lights.png' alt='Lights' className={styles.primeBannerImage} />
+      <img
+        src='/lights.png'
+        alt='Lights'
+        className={styles.primeBannerImage}
+        loading='lazy'
+      />
     </div>
   );
 };
