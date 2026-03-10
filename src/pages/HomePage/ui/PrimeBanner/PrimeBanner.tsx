@@ -28,12 +28,18 @@ export const PrimeBanner = () => {
         <Line className={styles.primeBannerLine} />
       </div>
 
-      <img
-        src='/lights.png'
-        alt='Lights'
-        className={styles.primeBannerImage}
-        loading='lazy'
-      />
+      <picture>
+        <source srcSet='/lights.webp' type='image/webp' />
+        <img
+          src='/lights.png'
+          alt='Lights'
+          className={styles.primeBannerImage}
+          loading='lazy'
+          width='154'
+          height='392'
+          fetchPriority='low'
+        />
+      </picture>
     </div>
   );
 };
