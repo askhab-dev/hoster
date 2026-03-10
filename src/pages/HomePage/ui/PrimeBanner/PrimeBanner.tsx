@@ -1,6 +1,6 @@
-import { Button } from '@/shared/ui/Button/Button';
 import styles from './PrimeBanner.module.css';
 import Line from '../../assets/line.svg?react';
+import { Button } from '@/shared/ui/Button/Button';
 
 export const PrimeBanner = () => {
   return (

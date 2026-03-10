@@ -1,9 +1,9 @@
-import { MultiSwitcher } from '@/shared/ui/MultiSwitcher/MultiSwitcher';
 import styles from './Service.module.css';
-import StarIcon from '@/shared/assets/star.svg?react';
 import { TariffCard } from './TariffCard/TariffCard';
-import { Button } from '@/shared/ui/Button/Button';
 import { TARIFFS } from '../../config/tariffs';
+import { MultiSwitcher } from '@/shared/ui/MultiSwitcher/MultiSwitcher';
+import StarIcon from '@/shared/assets/star.svg?react';
+import { Button } from '@/shared/ui/Button/Button';
 
 export const Service = () => {
   return (

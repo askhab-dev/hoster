@@ -1,9 +1,3 @@
-import { FAQ } from '@/widgets/FAQ/FAQ';
-import { Footer } from '@/widgets/Footer';
-import { SupportForm } from '@/widgets/SupportForm/SupportForm';
-import { Banner } from '@/widgets/Banner';
-import { Header } from '@/widgets/Header';
-
 import { BANNERS } from './config/banners';
 import { FAQ_LIST } from './config/faq';
 import { Sections } from './config/sections';
@@ -15,6 +9,11 @@ import { SpeedBlock } from './ui/SpeedBlock';
 import { Service } from './ui/Service';
 
 import styles from './HomePage.module.css';
+import { Header } from '@/widgets/Header';
+import { Banner } from '@/widgets/Banner';
+import { SupportForm } from '@/widgets/SupportForm/SupportForm';
+import { Footer } from '@/widgets/Footer';
+import { FAQ } from '@/widgets/FAQ/FAQ';
 
 export function HomePage() {
   return (
