@@ -11,7 +11,10 @@ export const SpeedBlock = () => {
         Современные процессоры и сверхбыстрые NVMe SSD внутри каждого сервера
       </p>
 
-      <div className={styles.speedBg} />
+      <picture>
+        <source srcSet='/speed.webp' type='image/webp' />
+        <img src='/speed.png' alt='speed' className={styles.speedBg} />
+      </picture>
     </div>
   );
 };
