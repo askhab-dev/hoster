@@ -1,3 +1,11 @@
+import StarIcon from '@/shared/assets/star.svg?react';
+
+export const TARIFFS_CATEGORIES = [
+  { id: 'a', label: 'Бюджетные тарифы' },
+  { id: 'b', label: 'Популярные тарифы', icon: <StarIcon /> },
+  { id: 'c', label: 'Производительные тарифы' },
+];
+
 export const TARIFFS = [
   {
     name: 'Стартовый Базовый',

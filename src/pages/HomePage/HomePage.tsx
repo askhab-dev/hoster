@@ -41,7 +41,7 @@ export function HomePage() {
       setTimeout(() => setLoadRest(true), 0);
     return () => {
       if (typeof handle === 'number') clearTimeout(handle);
-      else window.cancelIdleCallback?.(handle as any);
+      else window.cancelIdleCallback?.(handle);
     };
   }, []);
 

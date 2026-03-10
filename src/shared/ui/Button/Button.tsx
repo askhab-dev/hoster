@@ -1,9 +1,6 @@
 import cx from 'clsx';
 import styles from './Button.module.scss';
-
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'primary' | 'secondary';
-}
+import type { ButtonProps } from './Button.types';
 
 export const Button = (props: ButtonProps) => {
   const { children, variant, className, ...restProps } = props;

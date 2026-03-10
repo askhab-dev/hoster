@@ -1,31 +1,19 @@
-import { useState, type ReactNode } from 'react';
+import { memo, useState } from 'react';
 import cx from 'clsx';
 import styles from './MultiSwitcher.module.scss';
+import type { MultiSwitcherProps, SwitcherId } from './MultiSwitcher.types';
 
-export type SwitcherId = string | number;
+const SwitcherComponent = <T extends SwitcherId>(
+  props: MultiSwitcherProps<T>,
+) => {
+  const {
+    items,
+    defaultValue,
+    value: controlledValue,
+    onChange,
+    className = '',
+  } = props;
 
-export interface SwitcherItem<T = SwitcherId> {
-  id: T;
-  label: ReactNode;
-  disabled?: boolean;
-  icon?: ReactNode;
-}
-
-export interface MultiSwitcherProps<T = SwitcherId> {
-  items: SwitcherItem<T>[];
-  defaultValue?: T;
-  value?: T;
-  onChange?: (id: T) => void;
-  className?: string;
-}
-
-export const MultiSwitcher = <T extends SwitcherId>({
-  items,
-  defaultValue,
-  value: controlledValue,
-  onChange,
-  className = '',
-}: MultiSwitcherProps<T>) => {
   const isControlled = controlledValue !== undefined;
   const [internalValue, setInternalValue] = useState<T | undefined>(
     defaultValue,
@@ -66,3 +54,5 @@ export const MultiSwitcher = <T extends SwitcherId>({
     </div>
   );
 };
+
+export const MultiSwitcher = memo(SwitcherComponent);

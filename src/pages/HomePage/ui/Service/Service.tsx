@@ -1,8 +1,7 @@
 import styles from './Service.module.scss';
 import { TariffCard } from './TariffCard/TariffCard';
-import { TARIFFS } from '../../config/tariffs';
+import { TARIFFS, TARIFFS_CATEGORIES } from '../../config/tariffs';
 import { MultiSwitcher } from '@/shared/ui/MultiSwitcher/MultiSwitcher';
-import StarIcon from '@/shared/assets/star.svg?react';
 import { Button } from '@/shared/ui/Button/Button';
 
 export const Service = () => {
@@ -15,11 +14,7 @@ export const Service = () => {
       </p>
 
       <MultiSwitcher
-        items={[
-          { id: 'a', label: 'Бюджетные тарифы' },
-          { id: 'b', label: 'Популярные тарифы', icon: <StarIcon /> },
-          { id: 'c', label: 'Производительные тарифы' },
-        ]}
+        items={TARIFFS_CATEGORIES}
         defaultValue='a'
         className={styles.tariffsSwitcher}
       />
