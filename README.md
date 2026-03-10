@@ -28,7 +28,7 @@ npm run preview
 
 ## 🚀 Demo
 
-Проект доступен на [https://hoster.you/](hoster.you) и [https://hoster-iota.vercel.app/](hoster-iota.vercel.app).
+Проект доступен на [hoster.you](https://hoster.you/) и [hoster-iota.vercel.app](https://hoster-iota.vercel.app/).
 
 ## 🧱 Структура
 
